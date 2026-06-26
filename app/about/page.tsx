@@ -157,10 +157,10 @@ export default function About() {
           <div className="relative z-10">
             <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-8">Join Our Growing Community<span className="text-brand-blushed-brick">.</span></h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link href="/volunteer" className="bg-primary text-primary-foreground px-10 py-4 text-sm font-bold rounded-lg hover:opacity-90 transition-all shadow">
+              <Link href="/volunteer" className="bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold rounded-lg hover:opacity-90 transition-all shadow">
                 Become a Volunteer
               </Link>
-              <Link href="/donate" className="border border-primary text-primary px-10 py-4 text-sm font-bold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all">
+              <Link href="/donate" className="border border-primary text-primary px-6 py-3 text-sm font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all">
                 Support Our Work
               </Link>
             </div>

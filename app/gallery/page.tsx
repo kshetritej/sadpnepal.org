@@ -168,14 +168,14 @@ export default function GalleryPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/volunteer"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
             >
               <Heart size={20} />
               Become a Volunteer
             </a>
             <a
               href="/donate"
-              className="inline-flex items-center gap-2 border border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors"
             >
               Support Our Mission
               <ArrowRight size={20} />

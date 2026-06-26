@@ -100,7 +100,7 @@ function GetInvolvedSection() {
               <p className="text-white/80 max-w-md mb-6">Join our field teams or help with digital advocacy. We welcome diverse skills to scale our impact.</p>
               <Link
                 href="/volunteer"
-                className="inline-block bg-white text-brand-primary px-6 py-3 rounded-lg text-sm font-bold hover:bg-brand-yellow-green transition-colors"
+                className="inline-block bg-white text-brand-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-brand-yellow-green transition-colors"
               >
                 Apply Now
               </Link>
@@ -124,7 +124,7 @@ function GetInvolvedSection() {
             </div>
             <Link
               href="/internship"
-              className="mt-10 border border-primary text-primary px-6 py-3 rounded-lg text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+              className="mt-10 border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
             >
               Learn More
             </Link>
@@ -293,13 +293,13 @@ function CTASection() {
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <Link
             href="/donate"
-            className="bg-primary text-primary-foreground px-12 py-5 rounded-lg text-lg font-semibold hover:scale-105 transition-transform"
+            className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:scale-105 transition-transform"
           >
             Donate Now
           </Link>
           <a
             href="#"
-            className="bg-brand-yellow-green text-brand-primary px-12 py-5 rounded-lg text-lg font-semibold hover:scale-105 transition-transform inline-block"
+            className="bg-brand-yellow-green text-brand-primary px-6 py-3 rounded-lg text-sm font-semibold hover:scale-105 transition-transform inline-block"
           >
             Join Our Newsletter
           </a>

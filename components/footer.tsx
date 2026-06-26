@@ -16,7 +16,7 @@ export function Footer() {
               placeholder="Your email address"
               className="flex-1 md:w-72 px-5 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-white/40"
             />
-            <button className="px-6 py-3 bg-brand-yellow-green text-brand-primary text-sm font-bold rounded-lg hover:opacity-90 transition-opacity shrink-0">
+            <button className="px-6 py-3 bg-brand-yellow-green text-brand-primary text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity shrink-0">
               Subscribe
             </button>
           </div>
