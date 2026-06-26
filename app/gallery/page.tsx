@@ -84,13 +84,13 @@ export default function GalleryPage() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/volunteer"
-                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                  className="bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 text-center"
                 >
                   Join the Mission
                 </Link>
                 <Link
                   href="/donate"
-                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                  className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
                   Support Us
                 </Link>
@@ -115,7 +115,7 @@ export default function GalleryPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`shrink-0 px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
+                className={`shrink-0 px-6 py-2.5 rounded-full text-sm font-bold transition-colors ${
                   activeCategory === cat
                     ? "bg-primary text-primary-foreground"
                     : "border border-brand-primary text-brand-primary"
@@ -168,14 +168,14 @@ export default function GalleryPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/volunteer"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-white text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-white/90 transition-all duration-200"
             >
               <Heart size={20} />
               Become a Volunteer
             </a>
             <a
               href="/donate"
-              className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-white hover:text-brand-primary transition-all duration-200"
             >
               Support Our Mission
               <ArrowRight size={20} />

@@ -51,13 +51,13 @@ export default function About() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/volunteer"
-                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                  className="bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 text-center"
                 >
                   Become a Volunteer
                 </Link>
                 <Link
                   href="/donate"
-                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                  className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
                   Support Our Work
                 </Link>
@@ -157,10 +157,10 @@ export default function About() {
           <div className="relative z-10">
             <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-8">Join Our Growing Community<span className="text-brand-blushed-brick">.</span></h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link href="/volunteer" className="bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold rounded-lg hover:opacity-90 transition-all shadow">
+              <Link href="/volunteer" className="bg-white text-brand-primary px-8 py-3.5 text-sm font-bold rounded-full shadow-sm hover:bg-white/90 transition-all duration-200">
                 Become a Volunteer
               </Link>
-              <Link href="/donate" className="border border-primary text-primary px-6 py-3 text-sm font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all">
+              <Link href="/donate" className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 text-sm font-bold rounded-full hover:bg-brand-primary hover:text-white transition-all duration-200">
                 Support Our Work
               </Link>
             </div>

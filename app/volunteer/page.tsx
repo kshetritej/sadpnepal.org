@@ -21,13 +21,13 @@ export default function VolunteerPage() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="#apply"
-                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                  className="bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 text-center"
                 >
                   Apply Now
                 </a>
                 <Link
                   href="/about"
-                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                  className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
                   Learn More
                 </Link>
@@ -387,7 +387,7 @@ export default function VolunteerPage() {
             <div>
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground text-sm font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+                className="w-full bg-brand-primary text-white text-sm font-bold px-8 py-3.5 rounded-full shadow-sm hover:bg-brand-primary/90 transition-all duration-200"
               >
                 Submit Application
               </button>

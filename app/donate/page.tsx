@@ -81,13 +81,13 @@ export default function DonatePage() {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="#form"
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                className="bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 text-center"
               >
                 Donate Now
               </a>
               <Link
                 href="/about"
-                className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
               >
                 See Our Impact
               </Link>
@@ -143,7 +143,7 @@ export default function DonatePage() {
                 key={f}
                 type="button"
                 onClick={() => setFrequency(f)}
-                className={`px-8 py-3 rounded-lg text-sm font-semibold transition-colors ${
+                className={`px-8 py-3 rounded-full text-sm font-bold transition-colors ${
                   frequency === f
                     ? "bg-primary text-primary-foreground"
                     : "text-brand-on-surface-variant"
@@ -230,7 +230,7 @@ export default function DonatePage() {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex items-center gap-3 px-6 py-3 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity disabled:opacity-60"
+              className="inline-flex items-center gap-3 px-8 py-3.5 bg-brand-primary text-white rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 disabled:opacity-60"
             >
               <CreditCard size={20} />
               {loading ? "Processing..." : "Complete Secure Donation"}
@@ -319,7 +319,7 @@ export default function DonatePage() {
               placeholder="Enter your email"
               className="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40"
             />
-            <button className="px-6 py-3 bg-brand-yellow-green text-brand-primary text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity">
+            <button className="px-8 py-3.5 bg-brand-yellow-green text-brand-primary text-sm font-bold rounded-full shadow-sm hover:bg-brand-yellow-green/90 transition-all duration-200">
               Subscribe
             </button>
           </div>

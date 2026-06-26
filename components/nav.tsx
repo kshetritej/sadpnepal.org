@@ -44,7 +44,7 @@ export function Nav() {
         </div>
         <Link
           href="/donate"
-          className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
+          className="hidden md:inline-flex items-center gap-2 bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200"
         >
           <Heart className="size-4 fill-current" />
           Donate
@@ -79,7 +79,7 @@ export function Nav() {
             <Link
               href="/donate"
               onClick={() => setOpen(false)}
-              className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold text-center mt-2"
+              className="bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 text-center mt-2"
             >
               Donate Now
             </Link>

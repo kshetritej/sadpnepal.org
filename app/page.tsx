@@ -31,13 +31,13 @@ function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/volunteer"
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                className="bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 text-center"
               >
                 Start Your Journey
               </Link>
               <Link
                 href="/about"
-                className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
               >
                 See Programs
               </Link>
@@ -100,7 +100,7 @@ function GetInvolvedSection() {
               <p className="text-white/80 max-w-md mb-6">Join our field teams or help with digital advocacy. We welcome diverse skills to scale our impact.</p>
               <Link
                 href="/volunteer"
-                className="inline-block bg-white text-brand-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-brand-yellow-green transition-colors"
+                className="inline-block bg-white text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-yellow-green transition-colors"
               >
                 Apply Now
               </Link>
@@ -124,7 +124,7 @@ function GetInvolvedSection() {
             </div>
             <Link
               href="/internship"
-              className="mt-10 border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+              className="mt-10 border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
             >
               Learn More
             </Link>
@@ -167,6 +167,14 @@ function TestimonialSection() {
   return (
     <section className="py-20 overflow-hidden bg-brand-yellow-green/15">
       <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-brand-primary mb-4">
+            Stories from the Field<span className="text-brand-blushed-brick">.</span>
+          </h2>
+          <p className="text-xl text-brand-outline max-w-2xl mx-auto">
+            Real experiences from volunteers and interns who have been part of our journey.
+          </p>
+        </div>
         <div className="max-w-2xl mx-auto">
           {/* ticket card */}
           <div className="bg-white rounded-2xl border-2 border-dashed border-brand-primary/30 relative">
@@ -293,13 +301,13 @@ function CTASection() {
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <Link
             href="/donate"
-            className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:scale-105 transition-transform"
+            className="bg-white text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-white/90 transition-all duration-200"
           >
             Donate Now
           </Link>
           <a
             href="#"
-            className="bg-brand-yellow-green text-brand-primary px-6 py-3 rounded-lg text-sm font-semibold hover:scale-105 transition-transform inline-block"
+            className="border-2 border-white text-white px-8 py-3.5 rounded-full text-sm font-bold hover:bg-white hover:text-brand-primary transition-all duration-200"
           >
             Join Our Newsletter
           </a>
