@@ -5,7 +5,7 @@ import { ArrowRight, ArrowLeft, Quote, Check, CheckCircle } from "lucide-react";
 import { useState } from "react";
 
 const HERO_BG =
-  "https://images.unsplash.com/photo-1495528156639-3015d7e3ed97?w=1920&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-xYVnQ5xdWVE?w=1920&q=80&auto=format&fit=crop";
 
 const VOLUNTEER_BG =
   "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1200&q=80&auto=format&fit=crop";
