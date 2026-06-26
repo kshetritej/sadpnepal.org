@@ -45,7 +45,7 @@ export default function DonatePage() {
             <span className="inline-block bg-brand-yellow-green/10 text-brand-yellow-green text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">
               Urgent Support Needed
             </span>
-            <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-montserrat)" }}>
+            <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
               Empower<br />Nepal&apos;s Sustainable<br />Future.
             </h1>
             <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">

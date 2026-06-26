@@ -22,7 +22,7 @@ function HeroSection() {
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[50vh] items-center">
           <div className="py-16 md:py-24">
-            <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-montserrat)" }}>
+            <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
               Cultivate<br />Change in Nepal<span className="text-brand-blushed-brick">.</span>
             </h1>
             <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
