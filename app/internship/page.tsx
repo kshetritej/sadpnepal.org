@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function InternshipPage() {
   return (
     <>
-      <section className="relative min-h-[40vh] overflow-hidden bg-brand-bg">
+      <section className="relative min-h-[50vh] overflow-hidden bg-brand-bg">
         <div className="max-w-[1280px] mx-auto px-6 md:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[50vh] items-center">
             <div className="py-16 md:py-24">
               <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">ENROLLING NOW</span>
               <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-syne)" }}>

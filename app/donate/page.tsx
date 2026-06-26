@@ -40,7 +40,7 @@ export default function DonatePage() {
     <div className="bg-brand-bg text-brand-primary">
       {/* Hero */}
       <section className="max-w-[1280px] mx-auto px-6 md:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[50vh] items-center">
           <div className="py-16 md:py-24">
             <span className="inline-block bg-brand-yellow-green/10 text-brand-yellow-green text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">
               Urgent Support Needed
