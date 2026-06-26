@@ -20,8 +20,8 @@ export function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/95 backdrop-blur-md">
       <nav className="flex justify-between items-center w-full px-6 md:px-16 py-4 max-w-[1280px] mx-auto">
-        <Link href="/" className="font-bold text-2xl text-brand-primary tracking-tight">
-          SADP-Nepal
+        <Link href="/" className="shrink-0">
+          <div className="size-8 rounded-lg bg-brand-blushed-brick" />
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => {
@@ -31,10 +31,10 @@ export function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`text-sm font-bold uppercase tracking-widest transition-colors ${
+                className={`text-xs font-bold uppercase tracking-wider transition-colors ${
                   isActive
                     ? "text-brand-primary border-b-2 border-brand-blushed-brick pb-1"
-                    : "text-brand-secondary hover:text-brand-blushed-brick"
+                    : "text-brand-on-surface hover:text-brand-blushed-brick"
                 }`}
               >
                 {l.label}
@@ -68,8 +68,8 @@ export function Nav() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className={`text-sm font-bold uppercase tracking-widest ${
-                    isActive ? "text-brand-primary" : "text-brand-secondary"
+                  className={`text-xs font-bold uppercase tracking-wider ${
+                    isActive ? "text-brand-primary" : "text-brand-on-surface"
                   }`}
                 >
                   {l.label}
