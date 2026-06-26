@@ -106,7 +106,7 @@ export default function DonatePage() {
               <div
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
                   i === 0
-                    ? "bg-brand-primary text-white"
+                    ? "bg-primary text-primary-foreground"
                     : "bg-brand-surface-container-low text-brand-on-surface-variant"
                 }`}
               >
@@ -138,7 +138,7 @@ export default function DonatePage() {
                 onClick={() => setFrequency(f)}
                 className={`px-8 py-3 rounded-lg text-sm font-semibold transition-colors ${
                   frequency === f
-                    ? "bg-brand-primary text-white"
+                    ? "bg-primary text-primary-foreground"
                     : "text-brand-on-surface-variant"
                 }`}
               >
@@ -158,9 +158,9 @@ export default function DonatePage() {
                   setCustomAmount("")
                 }}
                 className={`rounded-xl p-6 text-center transition-all ${
-                  selectedAmount === a.value && !customAmount
-                    ? "bg-brand-blushed-brick text-white"
-                    : "bg-brand-surface-container-low text-brand-primary hover:bg-brand-primary-container"
+                      selectedAmount === a.value && !customAmount
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-brand-surface-container-low text-brand-primary hover:bg-brand-primary-container"
                 }`}
               >
                 <span className="text-2xl font-bold">${a.value}</span>
@@ -223,7 +223,7 @@ export default function DonatePage() {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex items-center gap-3 px-10 py-4 bg-brand-blushed-brick text-white rounded-xl text-lg font-bold hover:opacity-90 transition-opacity disabled:opacity-60"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-primary text-primary-foreground rounded-xl text-lg font-bold hover:opacity-90 transition-opacity disabled:opacity-60"
             >
               <CreditCard size={20} />
               {loading ? "Processing..." : "Complete Secure Donation"}

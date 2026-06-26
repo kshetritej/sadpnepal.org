@@ -372,7 +372,7 @@ export default function VolunteerPage() {
             <div>
               <button
                 type="submit"
-                className="bg-brand-primary text-white font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+                className="bg-primary text-primary-foreground font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
               >
                 Submit Application
               </button>

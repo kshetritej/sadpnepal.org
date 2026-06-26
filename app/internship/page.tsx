@@ -264,7 +264,7 @@ export default function InternshipPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-brand-primary text-brand-yellow-green text-sm font-bold uppercase tracking-widest px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+                  className="w-full bg-primary text-primary-foreground text-sm font-bold uppercase tracking-widest px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
                 >
                   Submit Application
                 </button>

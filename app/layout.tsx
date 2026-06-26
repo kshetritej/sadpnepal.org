@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Epilogue } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 
-const epilogue = Epilogue({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-epilogue",
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-inter-tight",
   display: "swap",
 });
 
@@ -33,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={epilogue.variable}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>
