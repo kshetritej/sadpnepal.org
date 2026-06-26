@@ -46,12 +46,12 @@ function HeroSection() {
               Flexible durations. Full support. No farming experience needed.
             </p>
           </div>
-          <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-            <img
-              src={HERO_BG}
-              alt="Nepal sustainable agriculture"
-              className="w-full h-full object-cover"
-            />
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
+              <img
+                src={HERO_BG}
+                alt="Nepal sustainable agriculture"
+                className="w-full h-full object-cover scale-110"
+              />
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
           </div>
         </div>

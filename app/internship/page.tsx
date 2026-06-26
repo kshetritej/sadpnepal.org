@@ -31,11 +31,11 @@ export default function InternshipPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
               <img
                 src="https://images.unsplash.com/photo-1495528156639-3015d7e3ed97?w=1200&q=80&auto=format&fit=crop"
                 alt="Internship program"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
             </div>

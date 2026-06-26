@@ -33,11 +33,11 @@ export default function VolunteerPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
               <img
                 src={HERO_IMAGE}
                 alt="Volunteer in Nepal"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
             </div>
