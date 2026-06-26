@@ -1,26 +1,45 @@
+import Link from "next/link";
+
 export default function InternshipPage() {
   return (
     <>
-      <section className="relative h-[80vh] min-h-[600px] flex items-center">
-        <img
-          src="https://images.unsplash.com/photo-1495528156639-3015d7e3ed97?w=1920&q=80&auto=format&fit=crop"
-          alt="Internship hero"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-16 w-full">
-          <span className="inline-block bg-brand-yellow-green text-brand-primary text-sm font-bold uppercase tracking-widest px-4 py-2 mb-6">
-            ENROLLING NOW
-          </span>
-          <h1 className="text-5xl font-extrabold text-white max-w-3xl mb-6">
-            2026 Global Internship Program
-          </h1>
-          <p className="text-xl text-white/80 max-w-2xl">
-            A 6-week, field-based immersive program in Nepal focused on
-            regenerative agriculture, water systems, and community-led
-            development. Gain hands-on experience alongside local experts.
-          </p>
+      <section className="relative min-h-[40vh] overflow-hidden bg-brand-bg">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+            <div className="py-16 md:py-24">
+              <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">ENROLLING NOW</span>
+              <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-inter-tight)" }}>
+                2026 Global<br />Internship Program
+              </h1>
+              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                A 6-week, field-based immersive program in Nepal focused on
+                regenerative agriculture, water systems, and community-led
+                development. Gain hands-on experience alongside local experts.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="#apply"
+                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                >
+                  Apply Now
+                </a>
+                <Link
+                  href="/volunteer"
+                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                >
+                  See Programs
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1495528156639-3015d7e3ed97?w=1200&q=80&auto=format&fit=crop"
+                alt="Internship program"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+            </div>
+          </div>
         </div>
       </section>
 

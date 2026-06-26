@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const HERO_BG =
-  "https://images.unsplash.com/photo-1755010212818-9f08974a9664?w=1920&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1755010212818-9f08974a9664?w=1200&q=80&auto=format&fit=crop";
 
 const leaders = [
   {
@@ -37,16 +37,40 @@ const leaders = [
 export default function About() {
   return (
     <>
-      <section className="relative h-[614px] md:h-[716px] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${HERO_BG})` }} />
-          <div className="absolute inset-0 bg-brand-primary/40 mix-blend-multiply" />
-        </div>
-        <div className="relative z-10 px-6 md:px-16 max-w-[1280px] mx-auto w-full">
-          <div className="max-w-3xl">
-            <span className="bg-brand-yellow-green text-brand-primary text-sm font-bold px-4 py-1 mb-6 inline-block">OUR MISSION</span>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">Cultivating Sustainable Futures in Nepal.</h1>
-            <p className="text-xl text-white/90 leading-relaxed">Dedicated to empowering local communities through regenerative agriculture and environmental stewardship since 2004.</p>
+      <section className="relative min-h-[40vh] overflow-hidden bg-brand-bg">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+            <div className="py-16 md:py-24">
+              <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">OUR MISSION</span>
+              <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-inter-tight)" }}>
+                Cultivating<br />Sustainable Futures<br />in Nepal.
+              </h1>
+              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                Dedicated to empowering local communities through regenerative agriculture and environmental stewardship since 2004.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/volunteer"
+                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                >
+                  Become a Volunteer
+                </Link>
+                <Link
+                  href="/donate"
+                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                >
+                  Support Our Work
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={HERO_BG}
+                alt="Nepal sustainable agriculture"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+            </div>
           </div>
         </div>
       </section>

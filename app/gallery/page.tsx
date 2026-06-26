@@ -1,9 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { Leaf, Heart, ArrowRight } from "lucide-react";
 
 const categories = ["All Works", "Farming", "Community", "Events", "Training"];
+
+const GALLERY_HERO =
+  "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1200&q=80&auto=format&fit=crop";
 
 const galleryItems = [
   {
@@ -61,17 +65,46 @@ export default function GalleryPage() {
 
   return (
     <main className="bg-brand-bg">
-      <section className="py-28 px-6 md:px-16">
-        <div className="max-w-[1280px] mx-auto text-center">
-          <Leaf className="inline-block text-brand-primary mb-6" size={40} />
-          <h1 className="text-5xl md:text-7xl font-extrabold text-brand-primary mb-6">
-            Visual Journey of Sustainable Change
-          </h1>
-          <p className="text-brand-secondary text-lg md:text-xl max-w-3xl mx-auto">
-            Explore moments captured across our programs — from terraced fields
-            to community gatherings, each image tells a story of resilience and
-            hope in rural Nepal.
-          </p>
+      <section className="relative min-h-[40vh] overflow-hidden bg-brand-bg">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+            <div className="py-16 md:py-24">
+              <span className="inline-flex items-center gap-2 bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">
+                <Leaf className="size-4" />
+                Gallery
+              </span>
+              <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-inter-tight)" }}>
+                Visual Journey<br />of Sustainable<br />Change.
+              </h1>
+              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                Explore moments captured across our programs — from terraced fields
+                to community gatherings, each image tells a story of resilience and
+                hope in rural Nepal.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/volunteer"
+                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                >
+                  Join the Mission
+                </Link>
+                <Link
+                  href="/donate"
+                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                >
+                  Support Us
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={GALLERY_HERO}
+                alt="Gallery"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+            </div>
+          </div>
         </div>
       </section>
 

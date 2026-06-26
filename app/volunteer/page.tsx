@@ -1,31 +1,46 @@
+import Link from "next/link";
+
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1782211589058-78f2a3cced2e?w=1200&q=80&auto=format&fit=crop";
+
 export default function VolunteerPage() {
   return (
     <>
-      <section className="relative bg-brand-primary-container py-28 overflow-hidden">
-        <img
-          src="https://images.unsplash.com/photo-1782211589058-78f2a3cced2e?w=1920&q=80&auto=format&fit=crop"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-          loading="lazy"
-        />
-        <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-16">
-          <div className="max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-widest text-brand-yellow-green mb-4">
-              Volunteer
-            </p>
-            <h1 className="text-5xl font-extrabold text-brand-yellow-green mb-6">
-              Sow the seeds of change.
-            </h1>
-            <p className="text-xl text-brand-yellow-green/90 mb-8 max-w-xl">
-              Join SADP-Nepal and contribute to sustainable agriculture and
-              community-led development in rural Nepal.
-            </p>
-            <a
-              href="#apply"
-              className="inline-block bg-brand-yellow-green text-brand-primary font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
-            >
-              Apply Now
-            </a>
+      <section className="relative min-h-[40vh] overflow-hidden bg-brand-bg">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+            <div className="py-16 md:py-24">
+              <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">VOLUNTEER</span>
+              <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-inter-tight)" }}>
+                Sow the seeds<br />of change.
+              </h1>
+              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                Join SADP-Nepal and contribute to sustainable agriculture and
+                community-led development in rural Nepal.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="#apply"
+                  className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+                >
+                  Apply Now
+                </a>
+                <Link
+                  href="/about"
+                  className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={HERO_IMAGE}
+                alt="Volunteer in Nepal"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+            </div>
           </div>
         </div>
       </section>

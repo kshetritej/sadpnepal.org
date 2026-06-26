@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Heart, ShieldCheck, Lock, ArrowRight, CreditCard, School, Leaf } from "lucide-react"
+import Link from "next/link";
+import { useState } from "react";
+import { Heart, ShieldCheck, Lock, ArrowRight, CreditCard, School, Leaf } from "lucide-react";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1754665134859-7b5e4a71c570?w=1200&q=80&auto=format&fit=crop"
@@ -38,61 +39,67 @@ export default function DonatePage() {
   return (
     <div className="bg-brand-bg text-brand-primary">
       {/* Hero */}
-      <section className="grid grid-cols-2 max-w-7xl mx-auto px-6 py-20 gap-16 items-center">
-        <div>
-          <span className="text-sm font-bold uppercase tracking-widest text-brand-yellow-green bg-brand-yellow-green/10 px-4 py-2 rounded-full">
-            Urgent Support Needed
-          </span>
-          <h1 className="text-5xl font-extrabold mt-6 leading-tight">
-            Empower Nepal&apos;s<br />
-            Sustainable Future.
-          </h1>
-          <p className="mt-6 text-lg text-brand-on-surface-variant leading-relaxed">
-            Your donation provides agricultural tools, training, and
-            infrastructure to rural Nepali communities, building resilience
-            through sustainable farming and local leadership.
-          </p>
-          <div className="flex items-center gap-6 mt-8">
-            <div className="flex -space-x-4">
-              <img
-                src={PORTRAIT_1}
-                alt=""
-                className="w-12 h-12 rounded-full border-2 border-white"
-              />
-              <img
-                src={PORTRAIT_2}
-                alt=""
-                className="w-12 h-12 rounded-full border-2 border-white"
-              />
-              <img
-                src={PORTRAIT_3}
-                alt=""
-                className="w-12 h-12 rounded-full border-2 border-white"
-              />
+      <section className="max-w-[1280px] mx-auto px-6 md:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[40vh] items-center">
+          <div className="py-16 md:py-24">
+            <span className="inline-block bg-brand-yellow-green/10 text-brand-yellow-green text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">
+              Urgent Support Needed
+            </span>
+            <h1 className="text-4xl md:text-6xl font-black leading-[0.9] text-brand-primary mb-6" style={{ fontFamily: "var(--font-inter-tight)" }}>
+              Empower<br />Nepal&apos;s Sustainable<br />Future.
+            </h1>
+            <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              Your donation provides agricultural tools, training, and
+              infrastructure to rural Nepali communities, building resilience
+              through sustainable farming and local leadership.
+            </p>
+            <div className="flex items-center gap-6 mb-8">
+              <div className="flex -space-x-4">
+                <img
+                  src={PORTRAIT_1}
+                  alt=""
+                  className="w-12 h-12 rounded-full border-2 border-white"
+                />
+                <img
+                  src={PORTRAIT_2}
+                  alt=""
+                  className="w-12 h-12 rounded-full border-2 border-white"
+                />
+                <img
+                  src={PORTRAIT_3}
+                  alt=""
+                  className="w-12 h-12 rounded-full border-2 border-white"
+                />
+              </div>
+              <div>
+                <span className="font-bold text-xl">1,240+</span>
+                <p className="text-sm text-brand-on-surface-variant">
+                  Donors this month
+                </p>
+              </div>
             </div>
-            <div>
-              <span className="font-bold text-xl">1,240+</span>
-              <p className="text-sm text-brand-on-surface-variant">
-                Donors this month
-              </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="#form"
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow text-center"
+              >
+                Donate Now
+              </a>
+              <Link
+                href="/about"
+                className="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all text-center"
+              >
+                See Our Impact
+              </Link>
             </div>
           </div>
-        </div>
-        <div className="relative rounded-3xl overflow-hidden h-[600px]">
-          <img
-            src={HERO_IMAGE}
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-8">
-            <p className="text-white text-lg italic">
-              &ldquo;This program transformed our village&apos;s access to
-              clean water and sustainable farming.&rdquo;
-            </p>
-            <p className="text-white/80 text-sm mt-2">
-              &mdash; Maya Devi, Farmer, Okhaldhunga
-            </p>
+          <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src={HERO_IMAGE}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
           </div>
         </div>
       </section>
