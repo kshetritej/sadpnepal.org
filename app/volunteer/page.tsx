@@ -12,7 +12,7 @@ export default function VolunteerPage() {
             <div className="py-16 md:py-24">
               <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">VOLUNTEER</span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                Sow the seeds<br />of change.
+                Sow the seeds<br />of change<span className="text-brand-blushed-brick">.</span>
               </h1>
               <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Join SADP-Nepal and contribute to sustainable agriculture and

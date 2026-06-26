@@ -43,7 +43,7 @@ export default function About() {
             <div className="py-16 md:py-24">
               <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">OUR MISSION</span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                Cultivating<br />Sustainable Futures<br />in Nepal.
+                Cultivating<br />Sustainable Futures<br />in Nepal<span className="text-brand-blushed-brick">.</span>
               </h1>
               <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Dedicated to empowering local communities through regenerative agriculture and environmental stewardship since 2004.
@@ -155,7 +155,7 @@ export default function About() {
       <section className="py-28 px-6 md:px-16">
         <div className="bg-brand-yellow-green rounded-xl p-12 md:p-24 text-center max-w-[1280px] mx-auto relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-8">Join Our Growing Community.</h2>
+            <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-8">Join Our Growing Community<span className="text-brand-blushed-brick">.</span></h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link href="/volunteer" className="bg-primary text-primary-foreground px-10 py-4 text-sm font-bold rounded-lg hover:opacity-90 transition-all shadow">
                 Become a Volunteer

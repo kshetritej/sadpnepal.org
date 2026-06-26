@@ -74,7 +74,7 @@ export default function GalleryPage() {
                 Gallery
               </span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                Visual Journey<br />of Sustainable<br />Change.
+                Visual Journey<br />of Sustainable<br />Change<span className="text-brand-blushed-brick">.</span>
               </h1>
               <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Explore moments captured across our programs — from terraced fields
