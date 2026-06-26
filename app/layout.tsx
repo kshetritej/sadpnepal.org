@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Gabarito, Syne } from "next/font/google";
+import { Gabarito, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
@@ -10,9 +10,9 @@ const gabarito = Gabarito({
   display: "swap",
 });
 
-const syne = Syne({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-syne",
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${gabarito.variable} ${syne.variable}`}>
+    <html lang="en" className={`${gabarito.variable} ${montserrat.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>
