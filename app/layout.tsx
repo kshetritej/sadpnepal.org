@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Syne } from "next/font/google";
+import { Gabarito, Syne } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 
-const inter = Inter({
+const gabarito = Gabarito({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-gabarito",
   display: "swap",
 });
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable}`}>
+    <html lang="en" className={`${gabarito.variable} ${syne.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>
