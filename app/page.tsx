@@ -5,7 +5,7 @@ import { ArrowRight, ArrowLeft, Quote, Check, CheckCircle } from "lucide-react";
 import { useState } from "react";
 
 const HERO_BG =
-  "https://images.unsplash.com/photo-xYVnQ5xdWVE?w=1920&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1920&q=80&auto=format&fit=crop";
 
 const VOLUNTEER_BG =
   "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1200&q=80&auto=format&fit=crop";
@@ -165,14 +165,14 @@ function TestimonialSection() {
   const t = testimonials[active];
 
   return (
-    <section className="py-20 overflow-hidden bg-brand-secondary-bg">
+    <section className="py-20 overflow-hidden bg-brand-yellow-green/15">
       <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
         <div className="max-w-2xl mx-auto">
           {/* ticket card */}
           <div className="bg-white rounded-2xl border-2 border-dashed border-brand-primary/30 relative">
             {/* perforation circles */}
-            <div className="absolute -left-3 top-1/2 -translate-y-1/2 size-6 rounded-full bg-brand-secondary-bg" />
-            <div className="absolute -right-3 top-1/2 -translate-y-1/2 size-6 rounded-full bg-brand-secondary-bg" />
+            <div className="absolute -left-3 top-1/2 -translate-y-1/2 size-6 rounded-full bg-brand-yellow-green/15" />
+            <div className="absolute -right-3 top-1/2 -translate-y-1/2 size-6 rounded-full bg-brand-yellow-green/15" />
 
             <div className="p-8 md:p-10">
               <Quote className="size-8 text-brand-primary/20 mb-4" />
