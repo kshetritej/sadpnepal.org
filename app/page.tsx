@@ -197,7 +197,7 @@ function TestimonialSection() {
             <div className="p-4 flex items-center justify-between">
               <button
                 onClick={prev}
-                className="size-9 rounded-full border border-brand-primary/30 text-brand-primary hover:bg-brand-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+                className="size-9 rounded-lg border border-brand-primary/30 text-brand-primary hover:bg-brand-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
                 aria-label="Previous testimonial"
               >
                 <ArrowLeft className="size-4" />
@@ -216,7 +216,7 @@ function TestimonialSection() {
               </div>
               <button
                 onClick={next}
-                className="size-9 rounded-full border border-brand-primary/30 text-brand-primary hover:bg-brand-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+                className="size-9 rounded-lg border border-brand-primary/30 text-brand-primary hover:bg-brand-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
                 aria-label="Next testimonial"
               >
                 <ArrowRight className="size-4" />

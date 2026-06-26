@@ -164,7 +164,7 @@ export default function DonatePage() {
                   setSelectedAmount(a.value)
                   setCustomAmount("")
                 }}
-                className={`rounded-xl p-6 text-center transition-all ${
+                className={`rounded-lg p-6 text-center transition-all ${
                       selectedAmount === a.value && !customAmount
                         ? "bg-primary text-primary-foreground"
                         : "bg-brand-surface-container-low text-brand-primary hover:bg-brand-primary-container"
@@ -230,7 +230,7 @@ export default function DonatePage() {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex items-center gap-3 px-10 py-4 bg-primary text-primary-foreground rounded-xl text-lg font-bold hover:opacity-90 transition-opacity disabled:opacity-60"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-primary text-primary-foreground rounded-lg text-lg font-bold hover:opacity-90 transition-opacity disabled:opacity-60"
             >
               <CreditCard size={20} />
               {loading ? "Processing..." : "Complete Secure Donation"}
@@ -319,7 +319,7 @@ export default function DonatePage() {
               placeholder="Enter your email"
               className="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40"
             />
-            <button className="px-8 py-4 bg-brand-yellow-green text-brand-primary font-bold rounded-xl hover:opacity-90 transition-opacity">
+            <button className="px-8 py-4 bg-brand-yellow-green text-brand-primary font-bold rounded-lg hover:opacity-90 transition-opacity">
               Subscribe
             </button>
           </div>

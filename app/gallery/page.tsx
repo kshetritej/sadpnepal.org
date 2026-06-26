@@ -115,7 +115,7 @@ export default function GalleryPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold transition-colors ${
+                className={`shrink-0 px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
                   activeCategory === cat
                     ? "bg-primary text-primary-foreground"
                     : "border border-brand-primary text-brand-primary"
@@ -168,14 +168,14 @@ export default function GalleryPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/volunteer"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
             >
               <Heart size={20} />
               Become a Volunteer
             </a>
             <a
               href="/donate"
-              className="inline-flex items-center gap-2 border border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 border border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors"
             >
               Support Our Mission
               <ArrowRight size={20} />
