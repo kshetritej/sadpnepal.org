@@ -81,9 +81,11 @@ function GetInvolvedSection() {
   return (
     <section className="py-28 bg-brand-surface-container-low">
       <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-4">Get Involved</h2>
-          <p className="text-xl text-brand-outline max-w-2xl mx-auto">Transform lives and landscapes. Whether you&apos;re a student or a professional, we have a place for your passion.</p>
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="max-w-2xl">
+            <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-4">Get Involved</h2>
+            <p className="text-xl text-brand-outline">Transform lives and landscapes. Whether you&apos;re a student or a professional, we have a place for your passion.</p>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-7 group relative overflow-hidden rounded-xl bg-brand-primary h-[500px]">
@@ -252,9 +254,9 @@ function NewsSection() {
   return (
     <section className="py-28">
       <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-brand-primary mb-4">Recent Updates</h2>
-          <a href="#" className="inline-flex items-center gap-2 text-brand-primary text-sm font-bold hover:translate-x-2 transition-transform">
+        <div className="flex justify-between items-center mb-16">
+          <h2 className="text-5xl font-bold text-brand-primary">Recent Updates</h2>
+          <a href="#" className="text-brand-primary text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
             View All News <ArrowRight className="size-4" />
           </a>
         </div>
