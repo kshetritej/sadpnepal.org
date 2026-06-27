@@ -1,7 +1,19 @@
 import Link from "next/link";
+import { CheckCircle, MapPin, Globe, Users, TreePine, Tent, GraduationCap } from "lucide-react";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1782211589058-78f2a3cced2e?w=1200&q=80&auto=format&fit=crop";
+
+const costTable = [
+  { duration: "2 weeks", cost: "US$340" },
+  { duration: "4 weeks", cost: "US$650" },
+  { duration: "6 weeks", cost: "US$975" },
+  { duration: "2 months", cost: "US$1,300" },
+  { duration: "10 weeks", cost: "US$1,600" },
+  { duration: "3 months", cost: "US$1,850" },
+  { duration: "4 months", cost: "US$2,400" },
+  { duration: "6 months", cost: "US$3,000" },
+];
 
 export default function VolunteerPage() {
   return (
@@ -12,11 +24,10 @@ export default function VolunteerPage() {
             <div className="py-16 md:py-24">
               <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">VOLUNTEER</span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                Sow the seeds<br />of change<span className="text-brand-blushed-brick">.</span>
+                Volunteer in<br />Nepal<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
-                Join SADP-Nepal and contribute to sustainable agriculture and
-                community-led development in rural Nepal.
+              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                Nepal, the &ldquo;Land of Paradise&rdquo;, is a country of breathtaking beauty, abundant wildlife, and fascinating traditional cultures. Join us to make a positive difference in the lives of deprived communities.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -25,12 +36,12 @@ export default function VolunteerPage() {
                 >
                   Apply Now
                 </a>
-                <Link
-                  href="/about"
+                <a
+                  href="#cost"
                   className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
-                  Learn More
-                </Link>
+                  View Program Costs
+                </a>
               </div>
             </div>
             <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
@@ -47,239 +58,160 @@ export default function VolunteerPage() {
 
       <section className="py-28">
         <div className="max-w-[1280px] mx-auto px-6 md:px-16">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-12 lg:col-span-8">
-              <p className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4">
-                Why Volunteer
-              </p>
-              <h2 className="text-5xl font-extrabold text-brand-primary mb-6">
-                Cultivate Impact, Cultivate Self
+          <div className="max-w-4xl mx-auto">
+            <p className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4">About the Program</p>
+            <h2 className="text-5xl font-black text-brand-primary mb-8">
+              Make a Difference in Nepal<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
+              SADP Nepal is a non-governmental organization registered with the Nepal government and affiliated with the Social Welfare Council of Nepal, working in the field of Agriculture emphasizing sustainable agriculture development. Our program makes a positive difference in the lives of deprived communities by providing volunteering opportunities to international volunteers.
+            </p>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
+              We provide Nepali culture and training for foreign volunteers who wish to render their services to Nepal in the field of organic agriculture at our organic agriculture resource center and farms. Volunteers can also work in other areas including Education, Health, Community Development, Orphanage, Disability, Agro-Forestry, Environment and Ecology, and Poverty Alleviation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 bg-brand-surface-container-low">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: Globe, title: "Cultural Exchange", desc: "Visit surrounding villages and experience diverse Nepali culture. Enjoy traditional rural villages in Gurung, Magar, Darai, Kumal, Bote, and Tamang communities." },
+              { icon: Tent, title: "Adventure Awaits", desc: "White water rafting, Annapurna trekking, visits to Royal Chitwan National Park and elephant safari, and the birthplace of Lord Buddha in Lumbini." },
+              { icon: Users, title: "Individuals & Groups", desc: "Program available for individuals or groups of up to 10 people, from one week to five months. School groups, university students, and professionals welcome." },
+              { icon: GraduationCap, title: "Training & Support", desc: "Receive advice and support throughout your preparations. Get instruction about culture, food, behavior of villages, and local language." },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={i} className="bg-white rounded-xl p-8 border border-brand-outline-variant">
+                  <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
+                    <Icon className="size-6 text-brand-yellow-green" />
+                  </div>
+                  <h3 className="text-xl font-bold text-brand-primary mb-3">{item.title}</h3>
+                  <p className="text-xl text-brand-on-surface-variant">{item.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4">Requirements</p>
+              <h2 className="text-5xl font-black text-brand-primary mb-6">
+                Program Requirements<span className="text-brand-blushed-brick">.</span>
               </h2>
-              <p className="text-xl text-brand-on-surface-variant mb-8">
-                Volunteering with SADP-Nepal is more than service — it is a
-                chance to grow alongside the communities we work with. You will
-                gain hands-on experience in permaculture, regenerative
-                agriculture, and grassroots organising while living simply in
-                some of Nepal&rsquo;s most beautiful regions.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-                <div className="bg-brand-surface-container rounded-xl p-8">
-                  <h3 className="text-2xl font-semibold text-brand-primary mb-3">
-                    Sustainable Farming
-                  </h3>
-                  <p className="text-brand-on-surface-variant">
-                    Work alongside local farmers to restore soil health,
-                    implement water-harvesting systems, and establish
-                    food-forest plots using permaculture principles.
-                  </p>
-                </div>
-                <div className="bg-brand-surface-container rounded-xl p-8">
-                  <h3 className="text-2xl font-semibold text-brand-primary mb-3">
-                    Community Building
-                  </h3>
-                  <p className="text-brand-on-surface-variant">
-                    Co-facilitate workshops, support women-led cooperatives, and
-                    help document indigenous knowledge so it can be shared with
-                    future generations.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-brand-primary-container rounded-xl p-10 mb-16">
-                <h3 className="text-2xl font-semibold text-brand-yellow-green mb-6">
-                  What We Look For
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-brand-yellow-green/90">
-                    <svg
-                      className="w-6 h-6 shrink-0 mt-0.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span className="text-xl">
-                      <strong className="text-brand-yellow-green">
-                        Commitment to Sustainability
-                      </strong>{" "}
-                      — a genuine interest in ecological farming and low-impact
-                      living.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 text-brand-yellow-green/90">
-                    <svg
-                      className="w-6 h-6 shrink-0 mt-0.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span className="text-xl">
-                      <strong className="text-brand-yellow-green">
-                        Adaptability
-                      </strong>{" "}
-                      — you will live in a rural setting with limited
-                      connectivity and basic amenities.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 text-brand-yellow-green/90">
-                    <svg
-                      className="w-6 h-6 shrink-0 mt-0.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span className="text-xl">
-                      <strong className="text-brand-yellow-green">
-                        Communication
-                      </strong>{" "}
-                      — willingness to navigate cross-cultural contexts with
-                      patience and curiosity.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h2 className="text-5xl font-extrabold text-brand-primary mb-6">
-                  Local Living Experience
-                </h2>
-                <p className="text-xl text-brand-on-surface-variant mb-8">
-                  Volunteers stay with host families in the communities they
-                  serve, sharing meals, learning local languages, and
-                  experiencing daily life in rural Nepal. This immersion is the
-                  heart of the programme — you do not just visit, you belong.
-                </p>
-                <img
-                  src="https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1200&q=80&auto=format&fit=crop"
-                  alt="Volunteers in rural Nepal"
-                  className="w-full rounded-xl"
-                  loading="lazy"
-                />
+              <div className="space-y-4">
+                {[
+                  "Have no major health problems",
+                  "Have a positive and outgoing personality",
+                ].map((req, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle className="size-6 text-brand-primary shrink-0 mt-0.5" />
+                    <span className="text-lg text-brand-on-surface-variant">{req}</span>
+                  </div>
+                ))}
               </div>
             </div>
-
-            <aside className="col-span-12 lg:col-span-4">
-              <div className="sticky top-24 space-y-8">
-                <div className="bg-brand-surface-container-high rounded-xl p-8">
-                  <h3 className="text-2xl font-semibold text-brand-primary mb-6">
-                    Quick Facts
-                  </h3>
-                  <dl className="space-y-5">
-                    <div>
-                      <dt className="text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-1">
-                        Duration
-                      </dt>
-                      <dd className="text-lg text-brand-primary">
-                        Min 2 weeks up to 6 months
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-1">
-                        Language
-                      </dt>
-                      <dd className="text-lg text-brand-primary">
-                        English required
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-1">
-                        Location
-                      </dt>
-                      <dd className="text-lg text-brand-primary">
-                        Lalitpur, Kaski, Kavre
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-
-                <div className="bg-brand-secondary-container rounded-xl p-8">
-                  <h3 className="text-2xl font-semibold text-brand-secondary mb-6">
-                    Why SADP?
-                  </h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <svg
-                        className="w-6 h-6 shrink-0 mt-0.5 text-brand-secondary"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                        />
-                      </svg>
-                      <span className="text-brand-secondary">
-                        <strong>Registered NGO</strong> — officially recognised
-                        by the Government of Nepal.
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg
-                        className="w-6 h-6 shrink-0 mt-0.5 text-brand-secondary"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                      <span className="text-brand-secondary">
-                        <strong>Community-led</strong> — projects are designed
-                        and driven by local communities, not external agendas.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+            <div className="bg-brand-surface-container rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-brand-primary mb-4">Volunteers & Visitors Welcome</h3>
+              <p className="text-xl text-brand-on-surface-variant mb-4">
+                Volunteers, visitors, researchers, students, interns, and others are heartily welcome to join the program with their children, partners, or group of friends.
+              </p>
+              <div className="flex items-start gap-3">
+                <MapPin className="size-5 text-brand-blushed-brick shrink-0 mt-1" />
+                <p className="text-xl text-brand-on-surface-variant">
+                  With our extensive local network, experienced staff, and comprehensive information about all aspects of Nepal, we are able to develop extraordinary opportunities in any corner of Nepal.
+                </p>
               </div>
-            </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cost" className="py-28 bg-brand-primary">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-white mb-6">
+              Program Cost<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              A US$150 application fee (non-refundable) secures your place. Pay only once and access any SADP volunteer program over the next 2 years.
+            </p>
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 mb-8">
+              <table className="w-full text-white">
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th className="text-left p-4 text-sm font-bold uppercase tracking-widest">Duration</th>
+                    <th className="text-right p-4 text-sm font-bold uppercase tracking-widest">Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {costTable.map((row, i) => (
+                    <tr key={i} className="border-b border-white/10">
+                      <td className="p-4 text-white/90">{row.duration}</td>
+                      <td className="p-4 text-right font-bold">{row.cost}</td>
+                    </tr>
+                  ))}
+                  <tr>
+                    <td className="p-4 text-white/70 italic">Beyond six months</td>
+                    <td className="p-4 text-right text-white/70 italic">Negotiable</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <h3 className="text-xl font-bold text-white mb-4">What Your In-Country Fee Covers</h3>
+              <ul className="space-y-2">
+                {[
+                  "Administrative charge",
+                  "Project donation",
+                  "Airport pick up",
+                  "Transport to the project",
+                  "Meals and accommodation during placement",
+                  "Supervision",
+                  "24hr Emergency line",
+                  "Membership to host organization and SADP",
+                  "All safe travel alert service",
+                  "Letter of completion",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/80">
+                    <CheckCircle className="size-5 text-brand-yellow-green shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-white/60 text-xl mt-6">
+                Note: Nepal Travel Guide published by Lonely Planet has mentioned about our volunteer program and about our organic outlet at Pokhara in their guide book.
+              </p>
+              <p className="text-white/60 text-xl mt-2">
+                You will need a weekly budget of approximately US$30 for personal expenses like bottled water, beverages, and entertainment.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="apply" className="py-28 bg-brand-surface-container">
         <div className="max-w-4xl mx-auto px-6 md:px-16">
-          <p className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 text-center">
-            Get Involved
-          </p>
-          <h2 className="text-5xl font-extrabold text-brand-primary mb-12 text-center">
-            Volunteer Application
+          <p className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 text-center">Get Involved</p>
+          <h2 className="text-5xl font-black text-brand-primary mb-6 text-center">
+            Apply Now
           </h2>
+          <p className="text-center text-xl text-brand-on-surface-variant mb-12">
+            Apply via email at <a href="mailto:sadpnepal@gmail.com" className="text-brand-primary font-bold underline">sadpnepal@gmail.com</a> or fill the form below and we will get back to you.
+          </p>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label
-                  htmlFor="fullName"
-                  className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2"
-                >
-                  Full Name
+                <label htmlFor="fullName" className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2">
+                  Your Name <span className="text-brand-blushed-brick">*</span>
                 </label>
                 <input
                   type="text"
@@ -290,11 +222,8 @@ export default function VolunteerPage() {
                 />
               </div>
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2"
-                >
-                  Email
+                <label htmlFor="email" className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2">
+                  Your Email <span className="text-brand-blushed-brick">*</span>
                 </label>
                 <input
                   type="email"
@@ -306,59 +235,22 @@ export default function VolunteerPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label
-                  htmlFor="skills"
-                  className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2"
-                >
-                  Primary Skills
-                </label>
-                <select
-                  id="skills"
-                  name="skills"
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-brand-surface-container-low border border-brand-outline-variant text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
-                >
-                  <option value="">Select a skill</option>
-                  <option value="farming">Farming / Agriculture</option>
-                  <option value="teaching">Teaching / Education</option>
-                  <option value="construction">Construction</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="communications">
-                    Communications / Media
-                  </option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label
-                  htmlFor="duration"
-                  className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2"
-                >
-                  Preferred Duration
-                </label>
-                <select
-                  id="duration"
-                  name="duration"
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-brand-surface-container-low border border-brand-outline-variant text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
-                >
-                  <option value="">Select duration</option>
-                  <option value="2-weeks">2 weeks</option>
-                  <option value="1-month">1 month</option>
-                  <option value="3-months">3 months</option>
-                  <option value="6-months">6 months</option>
-                </select>
-              </div>
+            <div>
+              <label htmlFor="subject" className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2">
+                Subject
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                className="w-full px-4 py-3 rounded-lg bg-brand-surface-container-low border border-brand-outline-variant text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
+                placeholder="Volunteer Application"
+              />
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2"
-              >
-                Message
+              <label htmlFor="message" className="block text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mb-2">
+                Your Message
               </label>
               <textarea
                 id="message"
@@ -368,20 +260,6 @@ export default function VolunteerPage() {
                 className="w-full px-4 py-3 rounded-lg bg-brand-surface-container-low border border-brand-outline-variant text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
                 placeholder="Tell us about yourself and why you want to volunteer..."
               />
-            </div>
-
-            <div className="flex items-start gap-3">
-              <input
-                type="checkbox"
-                id="terms"
-                name="terms"
-                required
-                className="mt-1 h-5 w-5 rounded border-brand-outline-variant text-brand-primary focus:ring-brand-primary"
-              />
-              <label htmlFor="terms" className="text-brand-on-surface-variant">
-                I confirm that the information provided is accurate and I agree
-                to the terms and conditions of the volunteer programme.
-              </label>
             </div>
 
             <div>

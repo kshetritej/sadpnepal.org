@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Check, Sprout, Users, Tent, Sun, Clock, UtensilsCrossed, GraduationCap, DollarSign } from "lucide-react";
 
 export default function InternshipPage() {
   return (
@@ -7,14 +8,13 @@ export default function InternshipPage() {
         <div className="max-w-[1280px] mx-auto px-6 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[50vh] items-center">
             <div className="py-16 md:py-24">
-              <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">ENROLLING NOW</span>
+              <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">INTERNSHIP & TRAINING</span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                2026 Global<br />Internship Program
+                Internship &<br />Training Programs<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
-                A 6-week, field-based immersive program in Nepal focused on
-                regenerative agriculture, water systems, and community-led
-                development. Gain hands-on experience alongside local experts.
+              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                SADP Nepal offers hands-on training and a 6-week internship program in organic agriculture
+                at Govardhan Organic Agriculture Resource Center (GOARC) and other farms.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -27,7 +27,7 @@ export default function InternshipPage() {
                   href="/volunteer"
                   className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
-                  See Programs
+                  View Volunteer Program
                 </Link>
               </div>
             </div>
@@ -46,13 +46,13 @@ export default function InternshipPage() {
       <section className="max-w-[1280px] mx-auto px-6 md:px-16 -mt-16 relative z-20">
         <div className="bg-white rounded-xl shadow-xl grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-100">
           {[
-            { value: "6 Weeks", label: "Duration" },
-            { value: "15", label: "Limited Seats" },
-            { value: "100%", label: "Field Based" },
-            { value: "Nepal", label: "Location" },
+            { value: "4/7/15 Days", label: "Training Programs" },
+            { value: "6 Weeks", label: "Internship Duration" },
+            { value: "US$1,500", label: "Internship Fee" },
+            { value: "Pokhara", label: "Location" },
           ].map((item) => (
             <div key={item.label} className="p-8 text-center">
-              <div className="text-3xl font-extrabold text-brand-primary">
+              <div className="text-3xl font-black text-brand-primary">
                 {item.value}
               </div>
               <div className="text-sm font-bold uppercase tracking-widest text-brand-on-surface-variant mt-1">
@@ -65,265 +65,252 @@ export default function InternshipPage() {
 
       <section className="py-28">
         <div className="max-w-[1280px] mx-auto px-6 md:px-16">
-          <span className="text-sm font-bold uppercase tracking-widest text-brand-primary block mb-2">
-            CURRICULUM
-          </span>
-          <h2 className="text-5xl font-extrabold text-brand-primary mb-12">
-            What You&apos;ll Learn
-          </h2>
-
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 md:col-span-7 bg-brand-surface-container rounded-2xl p-8">
-              <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
-                <span className="text-brand-yellow-green text-2xl">🌱</span>
-              </div>
-              <h3 className="text-2xl font-semibold text-brand-primary mb-3">
-                Regenerative Soil Management
-              </h3>
-              <p className="text-xl text-brand-on-surface-variant mb-6">
-                Learn composting, vermiculture, biochar production, and
-                no-till farming techniques that restore soil health and
-                sequester carbon in the mid-hills of Nepal.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="bg-brand-secondary-container text-brand-secondary text-sm font-medium px-4 py-2 rounded-full">
-                  Soil Science
-                </span>
-                <span className="bg-brand-secondary-container text-brand-secondary text-sm font-medium px-4 py-2 rounded-full">
-                  Lab Research
-                </span>
-              </div>
-            </div>
-
-            <div className="col-span-12 md:col-span-5 bg-brand-surface-container rounded-2xl p-8">
-              <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
-                <span className="text-brand-yellow-green text-2xl">💧</span>
-              </div>
-              <h3 className="text-2xl font-semibold text-brand-primary mb-3">
-                Water Systems &amp; Irrigation
-              </h3>
-              <p className="text-xl text-brand-on-surface-variant mb-6">
-                Design and install gravity-fed drip irrigation, rainwater
-                harvesting, and check-dam systems.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Survey & site assessment",
-                  "System design & material takeoff",
-                  "Installation & testing",
-                  "Community training",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="text-brand-primary mt-1 shrink-0">✓</span>
-                    <span className="text-brand-on-surface-variant">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="col-span-12 md:col-span-4 bg-brand-surface-container rounded-2xl p-8">
-              <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
-                <span className="text-brand-yellow-green text-2xl">🤝</span>
-              </div>
-              <h3 className="text-2xl font-semibold text-brand-primary mb-3">
-                Community Outreach
-              </h3>
-              <p className="text-xl text-brand-on-surface-variant">
-                Facilitate participatory rural appraisals, lead farmer
-                training workshops, and collaborate with local women&apos;s
-                cooperatives on kitchen garden initiatives.
-              </p>
-            </div>
-
-            <div className="col-span-12 md:col-span-8 rounded-2xl relative overflow-hidden min-h-[300px]">
-              <img
-                src="https://images.unsplash.com/photo-1681636052845-219e64b8024c?w=1200&q=80&auto=format&fit=crop"
-                alt="Capstone project"
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-              <div className="relative z-10 p-8 flex flex-col justify-end h-full min-h-[300px]">
-                <div className="w-12 h-12 bg-brand-yellow-green rounded-xl flex items-center justify-center mb-4">
-                  <span className="text-brand-primary text-2xl">🚀</span>
+          <div className="max-w-4xl mx-auto">
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick block mb-2">Training Programs</span>
+            <h2 className="text-5xl font-black text-brand-primary mb-8">
+              Training Programs<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
+              SADP Nepal offers different levels of training programs in organic agriculture as per the interest groups.
+              We organize 4 days, 7 days, and 15 days training programs at our training centre in Kaski district.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+              {[
+                { days: "4 Days", level: "Basic Training", desc: "All year round registration is open for our 4-day basic training program at our training centre." },
+                { days: "7 Days", level: "Advanced Training", desc: "Deepen your knowledge with our advanced 7-day program covering complex organic farming techniques." },
+                { days: "15 Days", level: "Training of Trainers (TOT)", desc: "Comprehensive TOT program for those who want to train others in organic agriculture practices." },
+              ].map((p, i) => (
+                <div key={i} className="bg-brand-surface-container rounded-2xl p-8 border border-brand-outline-variant">
+                  <div className="text-3xl font-black text-brand-primary mb-2">{p.days}</div>
+                  <h3 className="text-xl font-bold text-brand-primary mb-3">{p.level}</h3>
+                  <p className="text-xl text-brand-on-surface-variant">{p.desc}</p>
                 </div>
-                <h3 className="text-2xl font-semibold text-white mb-3">
-                  Capstone Project
+              ))}
+            </div>
+            <p className="text-xl text-brand-on-surface-variant">
+              Please send us an email about your interest in the training program and we will contact you for further procedure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 bg-brand-surface-container-low">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="max-w-4xl mx-auto">
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick block mb-2">Internship</span>
+            <h2 className="text-5xl font-black text-brand-primary mb-8">
+              6-Week Organic Agriculture Internship<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-8">
+              SADP Nepal offers a 6-week internship program to individuals interested in getting hands-on experience
+              in organic gardening including seed saving, and community living at Govardhan Organic Agriculture Resource
+              Center (GOARC) and other farms around Pokhara.
+            </p>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-12">
+              The internship is a combination of organic gardening techniques such as composting and appropriate technology.
+              Interns learn organic gardening techniques through hands-on projects, making compost, cultivating micro-organisms,
+              and preparing liquid organic fertilizers (Panchagavya, Panchapatra, Fish extract, EM-2, etc.), vermicompost,
+              and pile compost.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div className="bg-brand-surface-container rounded-2xl p-6">
+              <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Sprout className="size-5 text-brand-primary" /></div>
+              <h3 className="text-lg font-bold text-brand-primary mb-2">Gardening Skills</h3>
+              <p className="text-xl text-brand-on-surface-variant">Nursery seedlings, garden bed making, composting, liquid fertilizers, companion planting, pest management, seed saving.</p>
+            </div>
+            <div className="bg-brand-surface-container rounded-2xl p-6">
+              <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Users className="size-5 text-brand-primary" /></div>
+              <h3 className="text-lg font-bold text-brand-primary mb-2">Community Living</h3>
+              <p className="text-xl text-brand-on-surface-variant">Experience community living in the Nepali context with weekly group check-ins and evening activities.</p>
+            </div>
+            <div className="bg-brand-surface-container rounded-2xl p-6">
+              <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Tent className="size-5 text-brand-primary" /></div>
+              <h3 className="text-lg font-bold text-brand-primary mb-2">Other Activities</h3>
+              <p className="text-xl text-brand-on-surface-variant">Meditation, local wine making, hiking, Nepali food cooking, and cultural exchanges.</p>
+            </div>
+            <div className="bg-brand-surface-container rounded-2xl p-6">
+              <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Sun className="size-5 text-brand-primary" /></div>
+              <h3 className="text-lg font-bold text-brand-primary mb-2">General Schedule</h3>
+              <p className="text-xl text-brand-on-surface-variant">Morning and afternoon sessions with extended break after lunch. Saturdays are for rest and town visits.</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-brand-primary mb-4">
+                  Gardening Skills
                 </h3>
-                <p className="text-xl text-white/80 max-w-xl">
-                  Design and implement a community-driven project from
-                  proposal to evaluation, mentored by SADP-Nepal field staff
-                  and partner university faculty.
-                </p>
+                <ul className="space-y-3">
+                  {[
+                    "Introduction of Organic agriculture in Nepal",
+                    "Making nursery seedlings and discussion of what plants need to start as seedlings",
+                    "Garden bed making techniques for different seasons and situations",
+                    "Double digging method",
+                    "Composting including different uses of animal manure",
+                    "Cultivating micro-organisms for making liquid fertilizers",
+                    "Companion planting",
+                    "Garden care including plant observation and problem solving",
+                    "Integrated pest management",
+                    "Making natural pesticides",
+                    "Harvesting for consumption",
+                    "Discussions on seed saving and seed biodiversity",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <Check className="size-5 text-brand-primary shrink-0 mt-0.5" />
+                      <span className="text-brand-on-surface-variant">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-bold text-brand-primary mb-3 flex items-center gap-2">
+                    <Users className="size-5" /> Community Living
+                  </h3>
+                  <p className="text-xl text-brand-on-surface-variant">
+                    Evening activities and exchanges are included. A large aspect of the internship also includes the experience of community living in the Nepali context as interns become community members for the duration of their internship. Weekly group check-ins focus on this relationship.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-brand-primary mb-3 flex items-center gap-2">
+                    <Clock className="size-5" /> General Schedule
+                  </h3>
+                  <p className="text-xl text-brand-on-surface-variant">
+                    Morning and afternoon sessions are held with an extended break after lunch. Evening and early afternoon discussion sessions are held periodically depending on interns&apos; interest. Every Saturday is break time to rest or explore the town.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-brand-primary mb-3 flex items-center gap-2">
+                    <GraduationCap className="size-5" /> Teaching Team
+                  </h3>
+                  <p className="text-xl text-brand-on-surface-variant">
+                    Experienced and expert instructors will be involved in teaching.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-brand-primary mb-3 flex items-center gap-2">
+                    <UtensilsCrossed className="size-5" /> Food & Accommodation
+                  </h3>
+                  <p className="text-xl text-brand-on-surface-variant">
+                    A thin cotton mat, blanket, sheet, pillow, and mosquito net are provided. Generally Nepali food is served using organic vegetables from the farm. Bathing options include an indoor cool shower.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-28 bg-brand-tertiary">
+      <section className="py-28 bg-brand-primary">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="max-w-2xl mx-auto text-center">
+            <DollarSign className="size-10 text-brand-yellow-green mx-auto mb-4" />
+            <h2 className="text-5xl font-black text-white mb-6">
+              Fee & Registration
+            </h2>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 mb-8">
+              <div className="text-5xl font-black text-brand-yellow-green mb-2">US$1,500</div>
+              <p className="text-xl text-white/80">per person for the 6-week internship program</p>
+            </div>
+            <div className="text-left space-y-4 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <p className="text-xl text-white/90">
+                Once you have sent your participant survey and have been confirmed, a <strong>US$150 non-refundable deposit</strong> is due to secure your spot.
+              </p>
+              <p className="text-xl text-white/90">
+                The remainder of your contribution will be expected on the first day of the internship at SADP either in Nepali currency or US dollars.
+              </p>
+              <p className="text-xl text-white/90">
+                For SADP Internship Participation, please fill up the Internship form and send by email to <a href="mailto:sadpnepal@gmail.com" className="text-brand-yellow-green font-bold underline">sadpnepal@gmail.com</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" className="py-28">
         <div className="max-w-[1280px] mx-auto px-6 md:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-sm font-bold uppercase tracking-widest text-brand-yellow-green block mb-2">
-                REQUIREMENTS
-              </span>
-              <h2 className="text-5xl font-extrabold text-white mb-8">
-                Who We&apos;re Looking For
+              <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick block mb-2">Apply</span>
+              <h2 className="text-5xl font-black text-brand-primary mb-6">
+                Apply for Training or Internship<span className="text-brand-blushed-brick">.</span>
               </h2>
-              <div className="space-y-6">
-                {[
-                  {
-                    icon: "🎓",
-                    title: "Academic Background",
-                    desc: "Currently enrolled in or recent graduate of agriculture, environmental science, engineering, or related fields.",
-                  },
-                  {
-                    icon: "🤲",
-                    title: "Commitment to Service",
-                    desc: "Demonstrated interest in community development, food sovereignty, or global health equity.",
-                  },
-                  {
-                    icon: "🌐",
-                    title: "Language Skills",
-                    desc: "English proficiency required; Nepali language skills are a strong plus — we provide language support.",
-                  },
-                ].map((req) => (
-                  <div key={req.title} className="flex gap-4">
-                    <div className="w-12 h-12 bg-brand-tertiary-container rounded-xl flex items-center justify-center shrink-0">
-                      <span className="text-xl">{req.icon}</span>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-white">
-                        {req.title}
-                      </h3>
-                      <p className="text-white/70">{req.desc}</p>
-                    </div>
-                  </div>
-                ))}
+              <p className="text-xl text-brand-on-surface-variant mb-6">
+                Register for our training programs or internship. Registration form is open all year round.
+                Send us an email about your interest and we will contact you for further procedure.
+              </p>
+              <div className="bg-brand-surface-container rounded-xl p-6">
+                <h3 className="text-lg font-bold text-brand-primary mb-3">Contact</h3>
+                <p className="text-xl text-brand-on-surface-variant">
+                  Email: <a href="mailto:sadpnepal@gmail.com" className="text-brand-primary font-bold underline">sadpnepal@gmail.com</a>
+                </p>
               </div>
             </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-semibold text-brand-primary mb-6">
-                Apply Now
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-brand-outline-variant">
+              <h3 className="text-2xl font-bold text-brand-primary mb-6">
+                Send Your Application
               </h3>
               <form className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label
-                      htmlFor="first-name"
-                      className="block text-sm font-medium text-brand-on-surface-variant mb-1"
-                    >
-                      First Name
+                    <label htmlFor="first-name" className="block text-sm font-medium text-brand-on-surface-variant mb-1">
+                      Full Name
                     </label>
                     <input
                       id="first-name"
                       type="text"
                       className="w-full border border-brand-outline-variant rounded-lg px-4 py-3 text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
-                      placeholder="John"
+                      placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label
-                      htmlFor="last-name"
-                      className="block text-sm font-medium text-brand-on-surface-variant mb-1"
-                    >
-                      Last Name
+                    <label htmlFor="email" className="block text-sm font-medium text-brand-on-surface-variant mb-1">
+                      Email
                     </label>
                     <input
-                      id="last-name"
-                      type="text"
+                      id="email"
+                      type="email"
                       className="w-full border border-brand-outline-variant rounded-lg px-4 py-3 text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
-                      placeholder="Doe"
+                      placeholder="your@email.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-brand-on-surface-variant mb-1"
-                  >
-                    Email
+                  <label htmlFor="program" className="block text-sm font-medium text-brand-on-surface-variant mb-1">
+                    Program of Interest
                   </label>
-                  <input
-                    id="email"
-                    type="email"
+                  <select
+                    id="program"
                     className="w-full border border-brand-outline-variant rounded-lg px-4 py-3 text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
-                    placeholder="john@university.edu"
-                  />
+                  >
+                    <option value="">Select a program</option>
+                    <option value="4-days">4 Days Basic Training</option>
+                    <option value="7-days">7 Days Advanced Training</option>
+                    <option value="15-days">15 Days TOT Program</option>
+                    <option value="internship">6-Week Internship</option>
+                  </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor="university"
-                    className="block text-sm font-medium text-brand-on-surface-variant mb-1"
-                  >
-                    University
-                  </label>
-                  <input
-                    id="university"
-                    type="text"
-                    className="w-full border border-brand-outline-variant rounded-lg px-4 py-3 text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary"
-                    placeholder="Your university"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-brand-on-surface-variant mb-1"
-                  >
-                    Why do you want to join this program?
+                  <label htmlFor="message" className="block text-sm font-medium text-brand-on-surface-variant mb-1">
+                    Your Message
                   </label>
                   <textarea
                     id="message"
                     rows={4}
                     className="w-full border border-brand-outline-variant rounded-lg px-4 py-3 text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary resize-none"
-                    placeholder="Tell us about your motivation..."
+                    placeholder="Tell us about yourself and your interest..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-brand-primary text-white text-sm font-bold uppercase tracking-widest px-8 py-3.5 rounded-full shadow-sm hover:bg-brand-primary/90 transition-all duration-200"
+                  className="w-full bg-brand-primary text-white text-sm font-bold px-8 py-3.5 rounded-full shadow-sm hover:bg-brand-primary/90 transition-all duration-200"
                 >
                   Submit Application
                 </button>
               </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-28">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
-          <div className="bg-brand-surface-container rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5">
-            <div className="lg:col-span-2 relative h-64 lg:h-auto">
-              <img
-                src="https://images.unsplash.com/photo-1592285896110-8d88b5b3a5d8?w=800&q=80&auto=format&fit=crop"
-                alt="Alumna testimonial"
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="lg:col-span-3 p-8 md:p-12 flex flex-col justify-center">
-              <span className="text-sm font-bold uppercase tracking-widest text-brand-primary block mb-4">
-                TESTIMONIAL
-              </span>
-              <blockquote className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
-                &ldquo;The SADP-Nepal internship completely transformed my
-                understanding of what sustainable development looks like on
-                the ground. Working alongside Nepali farmers and community
-                leaders taught me more in 12 weeks than I learned in two
-                years of coursework. This program doesn&rsquo;t just teach
-                you — it changes how you see the world.&rdquo;
-              </blockquote>
-              <div>
-                <div className="font-semibold text-brand-primary">
-                  Sarah Mitchell
-                </div>
-                <div className="text-sm text-brand-on-surface-variant">
-                  2024 Global Intern, University of California, Berkeley
-                </div>
-              </div>
             </div>
           </div>
         </div>

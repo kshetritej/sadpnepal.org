@@ -1,17 +1,45 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ArrowLeft, Quote, Check, CheckCircle } from "lucide-react";
+import { ArrowRight, ArrowLeft, Quote, Check, Leaf, Droplets, TreesIcon as Tree, Sprout, FlaskConical, GraduationCap, Search, Package } from "lucide-react";
 import { useState } from "react";
+import LatestNews from "@/components/latest-news";
 
 const HERO_BG =
   "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1920&q=80&auto=format&fit=crop";
 
-const VOLUNTEER_BG =
-  "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1200&q=80&auto=format&fit=crop";
-
-const TESTIMONIAL_AVATAR =
-  "https://images.unsplash.com/photo-1755011309874-b3c7120b6d5a?w=100&q=80&auto=format&fit=crop";
+const TESTIMONIALS = [
+  {
+    quote: "For my first time volunteering, I went to Nepal and had the pleasure of working with SADP Nepal. The hardest part of the trip for me was trying to give back half as much knowledge and know how that I was receiving. Travel is more than the seeing of sights; it is the change that goes on, deep and permanent, in the ideas of living.",
+    name: "Jon Gebbia",
+    location: "Volunteer, USA",
+  },
+  {
+    quote: "I had the pleasure of working with SADP Nepal and Ramesh for a month. The trip had a timeline, but the memories and lessons will last forever. By our fifth day with the family we were bound by the Festival of Lights and made the brother of Mrs. Baniya, and I the sister of Mr. Ramesh. It was the most wonderful day of my life.",
+    name: "Hillary & Bob",
+    location: "Volunteers, Canada",
+  },
+  {
+    quote: "I had my own idea of what to expect before leaving for Nepal to volunteer with SADP. I quickly found that the experience was not nearly as beautiful, rich or memorable as what I had come to encounter. I will always be filled with such positive memories from that trip and time in my life.",
+    name: "Brian Whitmire",
+    location: "Volunteer, USA",
+  },
+  {
+    quote: "One of my greatest experiences was spending a time with the SADP family. They became my family too. I am a proud volunteer of your organization, looking forward to repeat it in the near future. Everybody should experience the authentic Nepali way of living.",
+    name: "Marcela Reyes",
+    location: "Volunteer",
+  },
+  {
+    quote: "The past month went by so quickly, I can hardly believe it. In my heart a seed has been planted, dreams of organic school gardens in Holland, of my own organic farm\u2026one day! I hope to come back as soon as possible.",
+    name: "Renetta Hofstede (Sita Kumal)",
+    location: "Volunteer, Netherlands",
+  },
+  {
+    quote: "Staying at this farm has been such a wonderful experience. I can hardly believe how beautiful and peaceful it is and how lovely all of the Nepali people are. SADP\u2019s vision for Nepal is truly inspiring. Thank you SO much Ramesh, Govinda and Ajay! I will definitely be back!",
+    name: "Rhianna More (Radha Darai)",
+    location: "Volunteer, Canada",
+  },
+];
 
 function HeroSection() {
   return (
@@ -25,8 +53,8 @@ function HeroSection() {
             <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
               Cultivate<br />Change in Nepal<span className="text-brand-blushed-brick">.</span>
             </h1>
-            <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
-              Join 500+ volunteers in Nepal&apos;s sustainable farming movement — no experience required, just a passion for making a difference.
+            <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              Join us to help our farmers, Nepal&apos;s hardworking backbone, build a future of sustainable, regenerative agriculture.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
@@ -42,8 +70,8 @@ function HeroSection() {
                 See Programs
               </Link>
             </div>
-            <p className="text-sm text-brand-outline mt-4">
-              Flexible durations. Full support. No farming experience needed.
+            <p className="text-xl text-brand-outline mt-4">
+              Let&apos;s join hands to support our farmers. Your small help can be life-changing.
             </p>
           </div>
             <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
@@ -56,7 +84,7 @@ function HeroSection() {
           </div>
         </div>
         <div className="py-4">
-          <div className="flex items-center justify-center gap-8 md:gap-16">
+          <div className="flex items-center justify-center gap-6 md:gap-16 flex-wrap">
             {[
               { value: "500+", label: "Farmers Trained" },
               { value: "20+", label: "Communities Supported" },
@@ -77,57 +105,180 @@ function HeroSection() {
   );
 }
 
-function GetInvolvedSection() {
+function MissionSection() {
+  return (
+    <section className="py-28">
+      <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
+        <div className="max-w-4xl mx-auto text-center">
+          <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">OUR MISSION</span>
+          <p className="text-xl md:text-2xl text-brand-on-surface leading-relaxed mb-6">
+            Nepal, the land of the braves, home to supreme natural wonders, birthplace of Gautam Buddha, and a nation heavily dependent on agriculture, deserves better for its farmers.
+          </p>
+          <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-8">
+            SADP Nepal aims to provide hardworking farmers every possible assistance including research-backed knowledge, ideal markets for their products, introduction of simple agro-technologies to add value and shelf life to their crops, and encouragement to practice organic farming and conservation of the surrounding environment.
+          </p>
+          <p className="text-xl font-bold text-brand-primary">
+            Let&apos;s join hands to support our farmers to increase income generation activity in 2026<span className="text-brand-blushed-brick">.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function VolunteerCallSection() {
   return (
     <section className="py-28 bg-brand-surface-container-low">
       <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-5xl md:text-5xl font-bold text-brand-primary mb-4">Get Involved</h2>
-            <p className="text-xl text-brand-outline">Transform lives and landscapes. Whether you&apos;re a student or a professional, we have a place for your passion.</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">Volunteer</span>
+            <h2 className="text-5xl font-black text-brand-primary mb-6">
+              Volunteer for the Better Future<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
+              SADP Nepal caters opportunities to volunteers from around the world in multiple areas, all aimed at boosting environmentally sustainable regenerative organic farming in Nepal and uplifting the lives of underprivileged farmers.
+            </p>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-8">
+              Prior to plantation, the timeline between planting and harvesting, post-harvesting activities like facilitating markets, and researching ideas to add value to farm products to enhance shelf life are areas where our volunteers are welcomed.
+            </p>
+            <Link
+              href="/volunteer"
+              className="inline-flex bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200"
+            >
+              Join as a Volunteer
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { icon: Sprout, label: "Regenerative Farming" },
+              { icon: GraduationCap, label: "Research & Training" },
+              { icon: Droplets, label: "Water Conservation" },
+              { icon: Tree, label: "Forest Restoration" },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={i} className="bg-white rounded-xl p-6 border border-brand-outline-variant">
+                  <div className="w-10 h-10 bg-brand-yellow-green/20 rounded-lg flex items-center justify-center mb-3">
+                    <Icon className="size-5 text-brand-primary" />
+                  </div>
+                  <p className="text-sm font-bold text-brand-primary">{item.label}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-7 group relative overflow-hidden rounded-xl bg-brand-primary h-[500px]">
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-60"
-              style={{ backgroundImage: `url(${VOLUNTEER_BG})` }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-8 md:p-16">
-              <span className="bg-brand-yellow-green text-brand-primary px-3 py-1 rounded text-xs font-bold mb-4 inline-block">ON-SITE & REMOTE</span>
-              <h3 className="text-5xl font-bold text-white mb-4">Volunteer Program</h3>
-              <p className="text-white/80 max-w-md mb-6">Join our field teams or help with digital advocacy. We welcome diverse skills to scale our impact.</p>
-              <Link
-                href="/volunteer"
-                className="inline-block bg-white text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-yellow-green transition-colors"
-              >
-                Apply Now
-              </Link>
+      </div>
+    </section>
+  );
+}
+
+function TrainingSection() {
+  return (
+    <section className="py-28">
+      <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">Research & Training</span>
+          <h2 className="text-5xl font-black text-brand-primary mb-6">
+            Research & Training Programs<span className="text-brand-blushed-brick">.</span>
+          </h2>
+          <p className="text-xl text-brand-on-surface-variant max-w-3xl mx-auto">
+            Agriculture in Nepal is very much disorganized in every phase despite being the profession of almost two-thirds of its population. The most important reason is the lack of education. SADP Nepal makes an impact by offering the right education through research-backed training campaigns.
+          </p>
+        </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-brand-surface-container rounded-2xl p-8 md:p-12">
+              <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <Search className="size-6 text-brand-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-brand-primary mb-4">First Phase Training</h3>
+              <p className="text-xl text-brand-on-surface-variant leading-relaxed">
+                We with our volunteers research the availability of four components for successful regenerative organic farming: soil, water, sunlight, and natural fertilizers. Based on findings we organize training campaigns across Nepal to offer farmers the opportunity to produce the right product out of their farms so their income gets higher. This phase also includes techniques to nurture the plant organically for more and healthier food.
+              </p>
+            </div>
+            <div className="bg-brand-surface-container rounded-2xl p-8 md:p-12">
+              <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <Package className="size-6 text-brand-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-brand-primary mb-4">Second Phase Training</h3>
+              <p className="text-xl text-brand-on-surface-variant leading-relaxed">
+                The second phase happens before and during harvesting. Training includes innovative ways to make more out of what our farmers have. It brings scattered farmers together for the uniformity of the value they deserve by facilitating the right market. Training also induces traditional ways blended with modern innovation to value-add products for year-round income.
+              </p>
             </div>
           </div>
-          <div className="md:col-span-5 bg-brand-secondary-container p-8 md:p-16 rounded-xl flex flex-col justify-between border border-brand-outline-variant">
-            <div>
-              <span className="text-brand-primary text-xs font-bold uppercase tracking-widest block mb-4">Education</span>
-              <h3 className="text-5xl font-bold text-brand-on-surface-variant mb-4">Internships</h3>
-              <p className="text-brand-secondary mb-6">
-                Gain hands-on experience in sustainable agriculture, NGO management, and rural development in Nepal&apos;s diverse geography.
-              </p>
-              <ul className="space-y-3">
-                {["Field Research Ops", "Project Management", "Community Outreach"].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-brand-on-surface-variant">
-                    <CheckCircle className="size-5 text-brand-primary" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+      </div>
+    </section>
+  );
+}
+
+function RegenerativeFarmingSection() {
+  return (
+    <section className="py-28 bg-brand-primary">
+      <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-black text-white mb-6">
+            Regenerative Organic Farming<span className="text-brand-blushed-brick">.</span>
+          </h2>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Regenerative organic farming together with our farmers is the need of today&apos;s world for healthy food security in the future. SADP Nepal works every day to educate our farmers about this method. Soil health is necessary, but because of human greed we have been using chemical fertilizers for ages. If this continues, the soil becomes lifeless.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-white/20">
+            <div className="w-12 h-12 bg-brand-yellow-green rounded-xl flex items-center justify-center mb-4">
+              <Droplets className="size-6 text-brand-primary" />
             </div>
-            <Link
-              href="/internship"
-              className="mt-10 border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
-            >
-              Learn More
-            </Link>
+            <h3 className="text-2xl font-bold text-white mb-4">Conservation of Water Bodies & Forestlands</h3>
+            <p className="text-xl text-white/80 leading-relaxed">
+              SADP Nepal conserves the ecology in the vicinity of farmlands. We work with local farmers and volunteers on cleaning rivers, lakes and ponds, constructing water bodies and reservoirs, planting high carbon-sinking plants like bamboo, removing invasive alien plants, and planting high-value indigenous herbal plants in forest areas.
+            </p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-white/20">
+            <div className="w-12 h-12 bg-brand-yellow-green rounded-xl flex items-center justify-center mb-4">
+              <Sprout className="size-6 text-brand-primary" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">Working in Organic Farms with Farmers</h3>
+            <p className="text-xl text-white/80 leading-relaxed">
+              SADP Nepal has a network of organic farms with food and accommodation in various parts of Nepal. Our volunteers can work in these farms, learn about indigenous plant species, experience traditional farming ways, and enjoy the authentic lifestyle of Nepali farmers. Volunteers also learn techniques of producing vermicompost and gain knowledge of Nepalese culinary arts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ExpertiseSection() {
+  return (
+    <section className="py-28 bg-brand-surface-container-low">
+      <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">Knowledge & Innovation</span>
+          <h2 className="text-5xl font-black text-brand-primary mb-6">
+            Expertise & Technology<span className="text-brand-blushed-brick">.</span>
+          </h2>
+          <p className="text-xl text-brand-on-surface-variant max-w-3xl mx-auto">
+            No industry can sustain without expert knowledge and necessary technology. SADP Nepal collaborates with experts in regenerative organic farming and innovative technical minds to develop a road map for achieving food security in a sustainable way.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
+            <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
+              <GraduationCap className="size-6 text-brand-yellow-green" />
+            </div>
+            <h3 className="text-2xl font-bold text-brand-primary mb-4">Expertise</h3>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed">
+              Expertise in regenerative farming refers not only to agricultural scholars with university degrees, but also to those who have worked in this area for a very long time and learned how nature works. SADP Nepal provides opportunities to work with both kinds of experts.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
+            <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
+              <FlaskConical className="size-6 text-brand-yellow-green" />
+            </div>
+            <h3 className="text-2xl font-bold text-brand-primary mb-4">Tradition & Technology</h3>
+            <p className="text-xl text-brand-on-surface-variant leading-relaxed">
+              SADP Nepal considers technology in organic farming should be free from equipment and processes that degrade the environment and nutritional value. We are keen on finding ways to add value to farm products for longer use without contamination. We work with farmers and mentors to produce value-added products blending traditional Nepalese ways with technology.
+            </p>
           </div>
         </div>
       </div>
@@ -136,72 +287,46 @@ function GetInvolvedSection() {
 }
 
 function TestimonialSection() {
-  const testimonials = [
-    {
-      quote: "My experience with SADP-Nepal was truly incredible. The staff and host family were so welcoming and made me feel at home. The work we did was very fulfilling and I enjoyed every minute of it.",
-      name: "Jon Gebbia",
-      location: "Volunteer, USA",
-      img: TESTIMONIAL_AVATAR,
-    },
-    {
-      quote: "The permaculture training completely changed how I think about farming. The knowledge I gained is something I'll carry with me forever. An unforgettable experience.",
-      name: "Sarah Chen",
-      location: "Intern, Singapore",
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&auto=format&fit=crop",
-    },
-    {
-      quote: "Living with a host family and working alongside local farmers gave me a perspective no textbook could ever provide. Truly life-changing.",
-      name: "James Wilson",
-      location: "Volunteer, UK",
-      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&auto=format&fit=crop",
-    },
-  ];
-
   const [active, setActive] = useState(0);
 
-  const prev = () => setActive((a) => (a === 0 ? testimonials.length - 1 : a - 1));
-  const next = () => setActive((a) => (a === testimonials.length - 1 ? 0 : a + 1));
+  const prev = () => setActive((a) => (a === 0 ? TESTIMONIALS.length - 1 : a - 1));
+  const next = () => setActive((a) => (a === TESTIMONIALS.length - 1 ? 0 : a + 1));
 
-  const t = testimonials[active];
+  const t = TESTIMONIALS[active];
 
   return (
     <section className="py-20 overflow-hidden bg-brand-yellow-green/15">
       <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-brand-primary mb-4">
+          <h2 className="text-5xl font-black text-brand-primary mb-4">
             Stories from the Field<span className="text-brand-blushed-brick">.</span>
           </h2>
           <p className="text-xl text-brand-outline max-w-2xl mx-auto">
-            Real experiences from volunteers and interns who have been part of our journey.
+            Real experiences from volunteers who have been part of our journey.
           </p>
         </div>
         <div className="max-w-2xl mx-auto">
-          {/* ticket card */}
           <div className="bg-white rounded-2xl border-2 border-dashed border-brand-primary/30 relative">
-            {/* perforation circles */}
             <div className="absolute -left-3 top-1/2 -translate-y-1/2 size-6 rounded-full bg-brand-yellow-green/15" />
             <div className="absolute -right-3 top-1/2 -translate-y-1/2 size-6 rounded-full bg-brand-yellow-green/15" />
-
             <div className="p-8 md:p-10">
               <Quote className="size-8 text-brand-primary/20 mb-4" />
-              <blockquote className="text-base md:text-lg text-brand-on-surface leading-relaxed mb-6">
+              <blockquote className="text-xl md:text-2xl text-brand-on-surface leading-relaxed mb-6">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div
-                  className="w-10 h-10 rounded-full bg-cover bg-center shrink-0 border border-brand-primary/30"
-                  style={{ backgroundImage: `url(${t.img})` }}
-                />
+                  className="w-10 h-10 rounded-full bg-cover bg-center shrink-0 border border-brand-primary/30 bg-brand-primary/10 flex items-center justify-center"
+                >
+                  <span className="text-brand-primary font-bold text-sm">{t.name.charAt(0)}</span>
+                </div>
                 <div>
-                  <cite className="not-italic text-sm font-semibold text-brand-primary block">{t.name}</cite>
+                  <cite className="not-italic text-sm font-bold text-brand-primary block">{t.name}</cite>
                   <span className="text-xs text-brand-outline">{t.location}</span>
                 </div>
               </div>
             </div>
-
-            {/* tear-off line */}
             <div className="border-t-2 border-dashed border-brand-primary/30 mx-8" />
-
             <div className="p-4 flex items-center justify-between">
               <button
                 onClick={prev}
@@ -211,7 +336,7 @@ function TestimonialSection() {
                 <ArrowLeft className="size-4" />
               </button>
               <div className="flex gap-1.5">
-                {testimonials.map((_, i) => (
+                {TESTIMONIALS.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setActive(i)}
@@ -237,64 +362,11 @@ function TestimonialSection() {
   );
 }
 
-function NewsSection() {
-  const news = [
-    {
-      img: "https://images.unsplash.com/photo-1545662618-66de187bbf69?w=800&q=80&auto=format&fit=crop",
-      tag: "Community",
-      title: "Permaculture Workshop in Lamjung",
-      desc: "Over 40 local farmers gathered this week to master the art of swales and biological pest control...",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1731491435516-566d6d1e3141?w=800&q=80&auto=format&fit=crop",
-      tag: "Sustainability",
-      title: "Impact of the 2024 Seed Bank",
-      desc: "How our indigenous seed preservation program secured the harvest for 300 families this season...",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1617099388313-dc7b6d51c029?w=800&q=80&auto=format&fit=crop",
-      tag: "Infrastructure",
-      title: "Low-Cost Greenhouses for High Altitude",
-      desc: "Scaling winter production through innovative greenhouse designs made from locally sourced materials...",
-    },
-  ];
-
-  return (
-    <section className="py-28">
-      <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-        <div className="flex justify-between items-center mb-16">
-          <h2 className="text-5xl font-bold text-brand-primary">Recent Updates</h2>
-          <a href="#" className="text-brand-primary text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
-            View All News <ArrowRight className="size-4" />
-          </a>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {news.map((item, i) => (
-            <article key={i} className="group">
-              <div className="aspect-video overflow-hidden rounded-lg mb-6">
-                <img
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src={item.img}
-                  alt={item.title}
-                  loading="lazy"
-                />
-              </div>
-              <span className="text-brand-blushed-brick text-xs font-bold mb-2 block uppercase tracking-wide">{item.tag}</span>
-              <h3 className="text-2xl font-semibold mb-3 group-hover:text-brand-primary transition-colors">{item.title}</h3>
-              <p className="text-brand-outline line-clamp-2">{item.desc}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function CTASection() {
   return (
     <section className="py-28 bg-brand-primary relative overflow-hidden">
       <div className="relative z-10 px-6 md:px-16 max-w-[1280px] mx-auto text-center">
-        <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">Make a Difference Today</h2>
+        <h2 className="text-5xl md:text-7xl font-black text-white mb-6">Make a Difference Today</h2>
         <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
           Your support directly funds agricultural training and ecological restoration in Nepal&apos;s most vulnerable regions.
         </p>
@@ -305,12 +377,12 @@ function CTASection() {
           >
             Donate Now
           </Link>
-          <a
-            href="#"
+          <Link
+            href="/volunteer"
             className="border-2 border-white text-white px-8 py-3.5 rounded-full text-sm font-bold hover:bg-white hover:text-brand-primary transition-all duration-200"
           >
-            Join Our Newsletter
-          </a>
+            Join Our Mission
+          </Link>
         </div>
       </div>
     </section>
@@ -321,9 +393,13 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <GetInvolvedSection />
+      <MissionSection />
+      <VolunteerCallSection />
+      <TrainingSection />
+      <RegenerativeFarmingSection />
+      <ExpertiseSection />
       <TestimonialSection />
-      <NewsSection />
+      <LatestNews />
       <CTASection />
     </>
   );

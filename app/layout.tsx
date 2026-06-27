@@ -18,18 +18,18 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "SADP-Nepal | Sustainable Agriculture Development Program",
-    template: "%s | SADP-Nepal",
+    default: "SADP Nepal | Sustainable Agriculture Development Program",
+    template: "%s | SADP Nepal",
   },
   description:
     "Empowering rural communities through ecological farming, climate resilience, and food sovereignty in Nepal since 2002.",
   openGraph: {
-    title: "SADP-Nepal | Sustainable Agriculture Development Program",
+    title: "SADP Nepal | Sustainable Agriculture Development Program",
     description:
       "Empowering rural communities through ecological farming, climate resilience, and food sovereignty in Nepal.",
     type: "website",
     locale: "en_US",
-    siteName: "SADP-Nepal",
+    siteName: "SADP Nepal",
   },
 };
 

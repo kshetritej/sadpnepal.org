@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Leaf, Heart, ArrowRight } from "lucide-react";
+import { Leaf, Heart, Star, ArrowRight } from "lucide-react";
 
 const categories = ["All Works", "Farming", "Community", "Events", "Training"];
 
@@ -76,7 +76,7 @@ export default function GalleryPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Visual Journey<br />of Sustainable<br />Change<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-lg md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Explore moments captured across our programs — from terraced fields
                 to community gatherings, each image tells a story of resilience and
                 hope in rural Nepal.
@@ -156,12 +156,62 @@ export default function GalleryPage() {
         </div>
       </section>
 
+      <section className="py-28 bg-brand-yellow-green/15">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-brand-primary mb-4">
+              Visitor&rsquo;s Feedback<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <p className="text-xl text-brand-outline max-w-2xl mx-auto">
+              What our visitors say about their experience with SADP Nepal.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Tine Sawssel & Jan Tholen",
+                location: "Belgium",
+                text: "We really enjoyed our short stay at your farm. The people are really friendly here on these mountains. We have seen a lot of motivated farmers and believe that your projects will succeed.",
+              },
+              {
+                name: "Ingrid Duff & Toby Kilgreen",
+                location: "Australia & Sweden",
+                text: "We would just like to say a big thank-you to SADP for your kind hospitality. Although we were only here one night we enjoyed it thoroughly. The food was delicious, the room was cosy & the company was perfect.",
+              },
+              {
+                name: "Amy Matthews",
+                location: "USA",
+                text: "I arrived at the farm from my 3 months journey and ready to hurry on home in a few days. However I leave today in a new spirit \u2014 inspired and hopeful! Thank you for your strategic and thoughtful work for the health of Nepal\u2019s people and soil.",
+              },
+              {
+                name: "Isabelle Conus",
+                location: "Switzerland",
+                text: "If paradise should exist on the earth it could well be this place! The farm is beautiful. I participated in the preliminary survey of the farmers and it has been a wonderful and memorable experience. I will certainly never forget all the lovely people.",
+              },
+            ].map((f, i) => (
+              <div key={i} className="bg-white rounded-xl p-6 border border-brand-outline-variant">
+                  <div className="flex items-center gap-1 mb-3">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} className="size-5 fill-brand-yellow-green text-brand-yellow-green" />
+                    ))}
+                  </div>
+                <p className="text-brand-on-surface-variant mb-4">&ldquo;{f.text}&rdquo;</p>
+                <div>
+                  <p className="text-sm font-bold text-brand-primary">{f.name}</p>
+                  <p className="text-xs text-brand-outline">{f.location}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-brand-primary-container py-28 px-6 md:px-16">
         <div className="max-w-[1280px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
             Be Part of the Story
           </h2>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-white/80 text-xl max-w-2xl mx-auto mb-10">
             Your support helps us capture more moments like these and create
             lasting change in rural Nepal.
           </p>
