@@ -24,7 +24,12 @@ export function Footer() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 md:px-16 py-20 max-w-[1280px] mx-auto">
         <div>
-          <div className="font-bold text-xl text-white mb-6">SADP Nepal</div>
+          <div className="flex items-center gap-3 mb-6">
+            <img src="/sadpnepal-logo.png" alt="SADP Nepal" className="h-12 w-auto" />
+            <span className="text-white font-bold text-lg leading-tight">
+              SADP<br />Nepal
+            </span>
+          </div>
           <p className="text-xl text-white/70 leading-relaxed max-w-xs">
             Pioneering sustainable agriculture and rural empowerment in the heart of the Himalayas since 2002.
           </p>

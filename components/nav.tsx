@@ -22,8 +22,11 @@ export function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/95 backdrop-blur-md">
       <nav className="flex justify-between items-center w-full px-6 md:px-16 py-4 max-w-[1280px] mx-auto">
-        <Link href="/" className="shrink-0">
-          <div className="size-8 rounded-lg bg-brand-blushed-brick" />
+        <Link href="/" className="shrink-0 flex items-center gap-3">
+          <img src="/sadpnepal-logo.png" alt="SADP Nepal" className="h-10 w-auto" />
+          <span className="text-brand-primary font-bold text-sm leading-tight">
+            SADP<br />Nepal
+          </span>
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => {
