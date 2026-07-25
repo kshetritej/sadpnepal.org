@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Calendar, ArrowRight } from "lucide-react";
+import { LANDSCAPE_PHOTOS } from "@/lib/photos";
+
+const HERO_IMAGE = LANDSCAPE_PHOTOS[0];
 
 export const metadata: Metadata = {
   title: "News & Updates",
@@ -65,7 +68,7 @@ export default async function NewsPage() {
             </div>
             <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
               <img
-                src="https://images.unsplash.com/photo-1731491435516-566d6d1e3141?w=1200&q=80&auto=format&fit=crop"
+                src={HERO_IMAGE}
                 alt="News"
                 className="w-full h-full object-cover scale-110"
               />

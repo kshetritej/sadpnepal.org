@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { Check, Sprout, Users, Tent, Sun, Clock, UtensilsCrossed, GraduationCap, DollarSign } from "lucide-react";
+import { FARMING_PHOTOS } from "@/lib/photos";
+
+const HERO_IMAGE = FARMING_PHOTOS[12];
 
 export default function InternshipPage() {
   return (
@@ -33,7 +36,7 @@ export default function InternshipPage() {
             </div>
             <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
               <img
-                src="https://images.unsplash.com/photo-1495528156639-3015d7e3ed97?w=1200&q=80&auto=format&fit=crop"
+                src={HERO_IMAGE}
                 alt="Internship program"
                 className="w-full h-full object-cover scale-110"
               />

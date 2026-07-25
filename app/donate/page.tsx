@@ -1,11 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { Heart, Building2, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { COMMUNITY_PHOTOS } from "@/lib/photos";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1754665134859-7b5e4a71c570?w=1200&q=80&auto=format&fit=crop"
+const HERO_IMAGE = COMMUNITY_PHOTOS[0];
 
 export default function DonatePage() {
   const [loading, setLoading] = useState(false)

@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ArrowLeft, Quote, Check, Leaf, Droplets, TreesIcon as Tree, Sprout, FlaskConical, GraduationCap, Search, Package } from "lucide-react";
+import { ArrowRight, ArrowLeft, Quote, Check, Droplets, TreesIcon as Tree, Sprout, FlaskConical, GraduationCap, Search, Package } from "lucide-react";
 import { useState } from "react";
 import LatestNews from "@/components/latest-news";
+import { FARMING_PHOTOS, COMMUNITY_PHOTOS, CONSERVATION_PHOTOS, PEOPLE_PHOTOS } from "@/lib/photos";
 
-const HERO_BG =
-  "https://images.unsplash.com/photo-1763809678352-0f9ca8adb331?w=1920&q=80&auto=format&fit=crop";
+const HERO_BG = FARMING_PHOTOS[37];
+const homePhotos = [FARMING_PHOTOS[0], COMMUNITY_PHOTOS[0], CONSERVATION_PHOTOS[5], PEOPLE_PHOTOS[0]];
 
 const TESTIMONIALS = [
   {
@@ -82,6 +83,13 @@ function HeroSection() {
               />
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
           </div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+          {homePhotos.map((photo, i) => (
+            <div key={i} className="rounded-xl overflow-hidden aspect-[4/3]">
+              <img src={photo} alt="SADP Nepal" className="w-full h-full object-cover" />
+            </div>
+          ))}
         </div>
         <div className="py-4">
           <div className="flex items-center justify-center gap-6 md:gap-16 flex-wrap">

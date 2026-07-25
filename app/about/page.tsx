@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Target, Eye, Clock, Leaf, Sprout, Apple, Store, FlaskConical, Scale, Globe, TreePine, Briefcase, Users } from "lucide-react";
+import { Target, Eye, Leaf, Sprout, Apple, Store, FlaskConical, Scale, Globe, TreePine, Users, Heart } from "lucide-react";
+import { COMMUNITY_PHOTOS, PEOPLE_PHOTOS, FARMING_PHOTOS } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Dedicated to empowering local communities through regenerative agriculture and environmental stewardship in Nepal.",
+    "SADP Nepal — empowering marginalized farmers through sustainable agriculture since 2004.",
 };
 
-const HERO_BG =
-  "https://images.unsplash.com/photo-1755010212818-9f08974a9664?w=1200&q=80&auto=format&fit=crop";
+const HERO_BG = COMMUNITY_PHOTOS[0];
+const inlinePhotos = [PEOPLE_PHOTOS[0], FARMING_PHOTOS[0], COMMUNITY_PHOTOS[1]];
 
 export default function About() {
   return (
@@ -20,10 +21,10 @@ export default function About() {
             <div className="py-16 md:py-24">
               <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">ABOUT US</span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                Cultivating<br />Change in Nepal<span className="text-brand-blushed-brick">.</span>
+                SADP Nepal<span className="text-brand-blushed-brick">.</span>
               </h1>
               <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
-                Everything else can wait, agriculture can&apos;t. For over two decades, SADP Nepal has been empowering farmers through sustainable, regenerative farming.
+                A non-profit, non-governmental organization established in 2004 with the mission of improving the livelihoods of underprivileged and resource-poor farmers through sustainable agricultural development.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
@@ -36,14 +37,14 @@ export default function About() {
                   href="/our-work"
                   className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
-                  See Our Work
+                  See What We Do
                 </Link>
               </div>
             </div>
             <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
               <img
                 src={HERO_BG}
-                alt="Nepal sustainable agriculture"
+                alt="SADP Nepal"
                 className="w-full h-full object-cover scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
@@ -54,33 +55,23 @@ export default function About() {
 
       <section className="py-28">
         <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">INTRODUCTION</span>
-            <p className="text-xl md:text-2xl text-brand-on-surface leading-relaxed mb-8">
-              Sustainable Agriculture Development Program, Nepal (SADP Nepal) is a non-profit Non-Governmental Organization (NGO). Established in 2004, SADP is committed to improving the livelihood of underprivileged and under resourced farmers through research, development, and the promotion of sustainable agricultural systems in the country.
-            </p>
-            <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-              To achieve its objective SADP puts major emphasis on its partnership and collaboration with farmers, farming communities, academia and other organizations at local, national, regional and international levels. SADP Nepal has broadened its networking in the national and international level. Networking, lobbying and advocating in the favor of organic agriculture is another major focus of SADP Nepal.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="bg-brand-surface-container rounded-2xl p-10 md:p-12 border border-brand-outline-variant">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+            <div>
               <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
                 <Eye className="size-6 text-brand-yellow-green" />
               </div>
-              <h2 className="text-2xl font-bold text-brand-primary mb-4">Our Vision</h2>
+              <h2 className="text-2xl font-bold text-brand-primary mb-4">Vision</h2>
               <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-                To improve the livelihood of Nepalese farmers with diverse agro-ecological, socio-economic, and cultural settings by offering a basic understanding of the development and promotion of sustainable farming practices (Organic Agriculture), which ultimately creates an environmentally friendly society.
+                To create the chain of prosperous, purposeful, and environment friendly farming communities across Nepal based on regenerative, sustainable and organic agricultural practices that enhance livelihoods and agro-based industries, protect natural resources, and ensure food security for future generations.
               </p>
             </div>
-            <div className="bg-brand-surface-container rounded-2xl p-10 md:p-12 border border-brand-outline-variant">
+            <div>
               <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
                 <Target className="size-6 text-brand-yellow-green" />
               </div>
-              <h2 className="text-2xl font-bold text-brand-primary mb-4">Our Goal</h2>
+              <h2 className="text-2xl font-bold text-brand-primary mb-4">Mission</h2>
               <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-                To extensively promote sustainable use of natural resources in agriculture through participatory research and development in organic agriculture. The alternative renewable resources will be utilized with proper care and technique for the long term effect.
+                To empower marginalized farmers and women in the rural communities through research, capacity building, innovation, partnerships, and the promotion of sustainable agriculture, enabling improved livelihoods, environmental conservation, and inclusive rural development.
               </p>
             </div>
           </div>
@@ -90,112 +81,22 @@ export default function About() {
       <section className="py-28 bg-brand-surface-container-low">
         <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
           <div className="text-center mb-16">
-            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">Timeline</span>
             <h2 className="text-5xl font-black text-brand-primary mb-6">
-              Goals by Timeline<span className="text-brand-blushed-brick">.</span>
+              Strategic Objectives<span className="text-brand-blushed-brick">.</span>
             </h2>
-            <p className="text-xl text-brand-on-surface-variant max-w-3xl mx-auto">
-              SADP Nepal has carefully designed its goals for different time frames, considering immediate priorities of farmers, required funding, and long-term impact.
-            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
-              <div className="w-12 h-12 bg-brand-yellow-green rounded-xl flex items-center justify-center mb-4">
-                <Clock className="size-6 text-brand-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-brand-primary mb-3">Short Term (6 mo – 2 yr)</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-                Create consumer and farmer forums, linking them so organic food products get easy access at farmer-friendly prices. Train and work with farmers to encourage organic farming, cultivate soil-friendly crops, and value-add harvests with simple research-backed techniques to prolong shelf life.
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
-              <div className="w-12 h-12 bg-brand-yellow-green rounded-xl flex items-center justify-center mb-4">
-                <Briefcase className="size-6 text-brand-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-brand-primary mb-3">Mid Term (2 – 5 yr)</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-                Create dozens of agro-tourism destinations where travelers can visit, volunteer, experience cultural exchanges, and enjoy peaceful escapades — boosting village livelihoods. Expand technical support for higher-value products and train communities on environmental conservation.
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
-              <div className="w-12 h-12 bg-brand-yellow-green rounded-xl flex items-center justify-center mb-4">
-                <Globe className="size-6 text-brand-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-brand-primary mb-3">Long Term (by 2035)</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-                Create clusters of organic farming societies across Nepal, develop cost-friendly technologies for value addition and extended shelf life, build travel destinations based on organic farming, and conserve land and water bodies through sustainable methods — preserved for as long as possible.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-28">
-        <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-5xl font-black text-brand-primary mb-8">
-              Our Focus Areas<span className="text-brand-blushed-brick">.</span>
-            </h2>
-            <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-              SADP Nepal has outlined the overall goals covering every aspect that encourages us to work tirelessly to make a huge positive impact across Nepal.
-            </p>
-          </div>
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><Leaf className="size-7 text-brand-primary" /> Promote Organic & Regenerative Agriculture</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Promote organic, regenerative, and agroecological farming systems that enhance soil health, conserve biodiversity, boost ecosystem resilience, and create sustainable food production throughout Nepal. We offer training, technical support, and practical demonstrations to farmers, youth, women, and agricultural entrepreneurs on organic and regenerative farming practices.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><Sprout className="size-7 text-brand-primary" /> Improve Soil Health & Natural Resource Management</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Work with farmers for sustainable management of soil, water, forests, and other natural resources through environmentally friendly agricultural practices. Support climate-smart and regenerative farming approaches that help regenerate top soil health, ecosystem and suppress carbon emission into the environment.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><Apple className="size-7 text-brand-primary" /> Conserve Indigenous Seeds & Agricultural Biodiversity</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Preserve, multiply, and promote indigenous seeds and animal species, local crop varieties, traditional livestock breeds, and agricultural biodiversity. Improve household food security and nutritional outcomes through diversified organic farming systems and healthy food production.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><Store className="size-7 text-brand-primary" /> Develop Organic Value Chains & Market Access</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Facilitate market linkages, organic certification, value addition, branding, and fair trade opportunities for organic producers and farmer groups. Create economic opportunities for women and youth through sustainable agriculture, agribusiness development, leadership training, and entrepreneurship programs.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><FlaskConical className="size-7 text-brand-primary" /> Support Research, Innovation & Learning Centers</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Collaborate with academicians and scholars to conduct participatory research, document best practices, and promote innovation in organic and regenerative agriculture. Develop community-based resource centers and demonstration farms that serve as hubs for learning, innovation, and farmer-to-farmer knowledge exchange.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><Scale className="size-7 text-brand-primary" /> Advocate for Organic Agriculture Policies</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Collaborate with government agencies, civil societies, and international partners to promote policies, standards, and investments that support organic and regenerative agriculture. Promote sustainable rural livelihoods by working with farmers together from planting to harvesting to ultimately selling with the application of organic regenerative farming methods.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-brand-primary flex items-center gap-3"><Globe className="size-7 text-brand-primary" /> Encourage Agro-Tourism & Eco-Tourism</h3>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">Promote rural tourism blended with authentic culture and agriculture to support the earning of rural farmers and promote this segment of tourism in Nepal. Build partnerships and networks with farmers, cooperatives, universities, NGOs, government agencies, donors, and international organizations working in sustainable agriculture. Support Nepal&apos;s efforts in achieving the Sustainable Development Goals, particularly those related to poverty reduction, food security, climate action, environmental conservation, and sustainable livelihoods.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-28 bg-brand-surface-container-low">
-        <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">Our Principles</span>
-            <h2 className="text-5xl font-black text-brand-primary mb-6">
-              Objectives<span className="text-brand-blushed-brick">.</span>
-            </h2>
-            <p className="text-xl text-brand-on-surface-variant max-w-3xl mx-auto">
-              Our objectives are our work ethics from which we will never deviate. They will always boost us to get closer to all our goals achieved in different timelines.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
             {[
-              { icon: Leaf, text: "To promote organic agriculture by creating awareness through demonstration, action, research, and development." },
-              { icon: Sprout, text: "Practice of regenerative agriculture so that the soil gets restored with more carbon captured, making farms more resilient to climate change while improving food security." },
-              { icon: TreePine, text: "Focus on Climate Smart Agriculture by aiming to boost productivity, increase resilience against climate change and decrease greenhouse gas emission." },
-              { icon: Users, text: "Encouraging youths and women to seek career paths in organic farming by setting examples of successful lives financially, ethically and emotionally." },
-              { icon: FlaskConical, text: "Provide farming communities with relevant skills and technology for better food production and income generation in a sustainable way." },
-              { icon: Globe, text: "Create a forum for researchers, development professionals, farming communities, funding organizations, and academia for research and development in sustainable agriculture." },
-              { icon: Store, text: "Provide training and professional services to organizations and individuals involved in sustainable agriculture development." },
-              { icon: Scale, text: "Empower rural communities, improving their access to resources, information, and markets by establishing organic agriculture resource centers." },
-              { icon: Leaf, text: "Advocate in favor of organic agriculture and its importance at national and international levels." },
-              { icon: Globe, text: "Link tourism with organic agriculture systems to popularize organic farming through agro (eco) tourism." },
+              { icon: Leaf, text: "Promote organic, regenerative, and climate-resilient agricultural practices." },
+              { icon: Sprout, text: "Improve farmers' knowledge, skills, productivity, and income opportunities." },
+              { icon: TreePine, text: "Conserve soil health, water resources, biodiversity, and indigenous seeds." },
+              { icon: Apple, text: "Strengthen food and nutrition security through sustainable farming systems." },
+              { icon: Store, text: "Enhance market access, value addition, and fair-trade opportunities for farmers." },
+              { icon: Users, text: "Empower women, youth, and marginalized rural communities through agricultural entrepreneurship." },
+              { icon: FlaskConical, text: "Support research, innovation, demonstration farms, and knowledge sharing." },
+              { icon: Scale, text: "Advocate for policies that advance sustainable and organic agriculture in Nepal." },
+              { icon: Globe, text: "Foster national and international partnerships for agricultural development." },
+              { icon: Heart, text: "Promote agro-tourism and eco-tourism as complementary sources of rural income." },
             ].map((obj, i) => {
               const Icon = obj.icon;
               return (
@@ -213,19 +114,69 @@ export default function About() {
 
       <section className="py-28">
         <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
-          <div className="bg-brand-surface-container rounded-2xl p-10 md:p-16 border border-brand-outline-variant">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-black text-brand-primary mb-8">
-                Agro (Eco) Tourism<span className="text-brand-blushed-brick">.</span>
-              </h2>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
-                Nepal&apos;s combination of stunning natural environment and strong cultural heritage make it a truly remarkable country for the development of tourism. Our concern is to link tourism with the organic agriculture system through which the message gets widespread to popularize organic agriculture.
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-brand-primary mb-6">
+              Core Values<span className="text-brand-blushed-brick">.</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {[
+              { label: "Sustainability", desc: "Protecting natural resources while improving livelihoods." },
+              { label: "Farmer-Centered Development", desc: "Placing farmers and communities at the heart of all initiatives." },
+              { label: "Environmental Stewardship", desc: "Conserving biodiversity, soil, water, and ecosystems." },
+              { label: "Innovation and Learning", desc: "Encouraging research, experimentation, and knowledge exchange." },
+              { label: "Community Empowerment", desc: "Building local capacity, leadership, and self-reliance." },
+              { label: "Partnership and Collaboration", desc: "Working with farmers, academia, government, and development partners." },
+              { label: "Integrity and Accountability", desc: "Operating transparently and responsibly." },
+              { label: "Inclusiveness and Equity", desc: "Ensuring opportunities for women, youth, and disadvantaged groups." },
+              { label: "Resilience", desc: "Supporting adaptation to climate and economic challenges." },
+              { label: "Respect for Indigenous Knowledge", desc: "Valuing traditional farming wisdom and local resources." },
+            ].map((val, i) => (
+              <div key={i} className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
+                <h3 className="font-bold text-brand-primary mb-1">{val.label}</h3>
+                <p className="text-brand-on-surface-variant">{val.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 bg-brand-primary">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {inlinePhotos.map((photo, i) => (
+              <div key={i} className="rounded-2xl overflow-hidden aspect-[4/3]">
+                <img src={photo} alt="SADP Nepal history" className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28">
+        <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+              History of SADP Nepal<span className="text-brand-blushed-brick">.</span>
+            </h2>
+            <div className="space-y-6 text-xl text-brand-on-surface-variant leading-relaxed">
+              <p>
+                The Sustainable Agriculture Development Program Nepal (SADP-Nepal) is a non-profit, non-governmental organization established in 2004 with the mission of improving the livelihoods of underprivileged and resource-poor farmers through sustainable agricultural development. Since its inception, the organization has focused on research, training, demonstration, and promotion of environmentally friendly farming systems, particularly organic agriculture.
               </p>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
-                When a group of tourists visit, we manage logistics like food, accommodation and recreation. Organic food produced in the farm itself, cozy accommodation within the farm, and recreational activities with pure farming activities and nature is what our farmlands provide. It is a win-win scenario for both guests and hosts.
+              <p>
+                Recognizing the challenges faced by Nepalese farmers — including low productivity, environmental degradation, limited market access, and dependence on chemical-based agriculture — SADP-Nepal was founded to promote sustainable alternatives that enhance food security, conserve natural resources, and improve rural livelihoods.
               </p>
-              <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-                Local organic food and handicrafts prepared by local people gain value, creating income generation. Beside this, the organization is also committed to preserve and protect the culture of different ethnic groups in its project areas, transmitting cultural values and customs that promote tourism.
+              <p>
+                From the beginning, the organization adopted a collaborative approach, working closely with farmers, community groups, academic institutions, government agencies, and national and international partners. Through these partnerships, SADP-Nepal has implemented numerous projects involving organic farming, farmer training, soil fertility improvement, food security, women&apos;s economic empowerment, post-harvest management, and rural livelihood enhancement.
+              </p>
+              <p>
+                A significant milestone in the organization&apos;s growth was its membership in the International Federation of Organic Agriculture Movements (IFOAM) in 2007, strengthening its connection with the global organic agriculture movement and enhancing its advocacy and networking capacity.
+              </p>
+              <p>
+                Over the years, SADP-Nepal has expanded its activities beyond organic farming promotion to include agro-ecotourism, biodiversity conservation, indigenous seed preservation, climate-resilient agriculture, research and demonstration farms, and farmer capacity-building programs. The organization has worked with several international partners and donors to implement projects benefiting farming communities across Nepal.
+              </p>
+              <p>
+                Today, SADP-Nepal continues to serve as a leading advocate for sustainable and regenerative agriculture in Nepal, striving to create resilient farming communities, improve food security, and promote environmentally responsible rural development.
               </p>
             </div>
           </div>

@@ -1,8 +1,7 @@
-import Link from "next/link";
-import { CheckCircle, MapPin, Globe, Users, TreePine, Tent, GraduationCap } from "lucide-react";
+import { CheckCircle, MapPin, Globe, Users, Tent, GraduationCap } from "lucide-react";
+import { COMMUNITY_PHOTOS } from "@/lib/photos";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1782211589058-78f2a3cced2e?w=1200&q=80&auto=format&fit=crop";
+const HERO_IMAGE = COMMUNITY_PHOTOS[10];
 
 const costTable = [
   { duration: "2 weeks", cost: "US$340" },
