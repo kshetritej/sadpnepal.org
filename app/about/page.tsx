@@ -23,7 +23,7 @@ export default function About() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 SADP Nepal<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 A non-profit, non-governmental organization established in 2004 with the mission of improving the livelihoods of underprivileged and resource-poor farmers through sustainable agricultural development.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -133,8 +133,8 @@ export default function About() {
               { label: "Respect for Indigenous Knowledge", desc: "Valuing traditional farming wisdom and local resources." },
             ].map((val, i) => (
               <div key={i} className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
-                <h3 className="font-bold text-brand-primary mb-1">{val.label}</h3>
-                <p className="text-brand-on-surface-variant">{val.desc}</p>
+                <h3 className="text-xl font-bold text-brand-primary mb-1">{val.label}</h3>
+                <p className="text-xl text-brand-on-surface-variant">{val.desc}</p>
               </div>
             ))}
           </div>
@@ -156,7 +156,7 @@ export default function About() {
       <section className="py-28">
         <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               History of SADP Nepal<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="space-y-6 text-xl text-brand-on-surface-variant leading-relaxed">

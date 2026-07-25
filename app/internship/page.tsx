@@ -15,7 +15,7 @@ export default function InternshipPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Internship &<br />Training Programs<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 SADP Nepal offers hands-on training and a 6-week internship program in organic agriculture
                 at Govardhan Organic Agriculture Resource Center (GOARC) and other farms.
               </p>
@@ -120,22 +120,22 @@ export default function InternshipPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <div className="bg-brand-surface-container rounded-2xl p-6">
               <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Sprout className="size-5 text-brand-primary" /></div>
-              <h3 className="text-lg font-bold text-brand-primary mb-2">Gardening Skills</h3>
+              <h3 className="text-xl font-bold text-brand-primary mb-2">Gardening Skills</h3>
               <p className="text-xl text-brand-on-surface-variant">Nursery seedlings, garden bed making, composting, liquid fertilizers, companion planting, pest management, seed saving.</p>
             </div>
             <div className="bg-brand-surface-container rounded-2xl p-6">
               <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Users className="size-5 text-brand-primary" /></div>
-              <h3 className="text-lg font-bold text-brand-primary mb-2">Community Living</h3>
+              <h3 className="text-xl font-bold text-brand-primary mb-2">Community Living</h3>
               <p className="text-xl text-brand-on-surface-variant">Experience community living in the Nepali context with weekly group check-ins and evening activities.</p>
             </div>
             <div className="bg-brand-surface-container rounded-2xl p-6">
               <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Tent className="size-5 text-brand-primary" /></div>
-              <h3 className="text-lg font-bold text-brand-primary mb-2">Other Activities</h3>
+              <h3 className="text-xl font-bold text-brand-primary mb-2">Other Activities</h3>
               <p className="text-xl text-brand-on-surface-variant">Meditation, local wine making, hiking, Nepali food cooking, and cultural exchanges.</p>
             </div>
             <div className="bg-brand-surface-container rounded-2xl p-6">
               <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-3"><Sun className="size-5 text-brand-primary" /></div>
-              <h3 className="text-lg font-bold text-brand-primary mb-2">General Schedule</h3>
+              <h3 className="text-xl font-bold text-brand-primary mb-2">General Schedule</h3>
               <p className="text-xl text-brand-on-surface-variant">Morning and afternoon sessions with extended break after lunch. Saturdays are for rest and town visits.</p>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function InternshipPage() {
                 Send us an email about your interest and we will contact you for further procedure.
               </p>
               <div className="bg-brand-surface-container rounded-xl p-6">
-                <h3 className="text-lg font-bold text-brand-primary mb-3">Contact</h3>
+                <h3 className="text-xl font-bold text-brand-primary mb-3">Contact</h3>
                 <p className="text-xl text-brand-on-surface-variant">
                   Email: <a href="mailto:sadpnepal@gmail.com" className="text-brand-primary font-bold underline">sadpnepal@gmail.com</a>
                 </p>

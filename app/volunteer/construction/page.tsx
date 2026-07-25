@@ -21,7 +21,7 @@ export default function ConstructionVolunteerPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Construction<br />Volunteering<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Nepal is a beautiful country. However, because of lengthy political instability, harsh geographical topography, and scarcity of human resources, communities do not have enough environment friendly homes. Volunteering in construction projects across Nepal using locally available natural materials such as stone, bamboo, mud, and timber is deeply impactful.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">

@@ -21,7 +21,7 @@ export default function KKGECPPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Kali Khola Green<br />Economic Corridor<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 A community-led visionary blueprint to transform and enhance one of Pokhara&apos;s most ecologically resourceful yet fragile zones into an exemplary hub of resilient, self-sustaining, thriving and vibrant eco-corridor.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -81,13 +81,13 @@ export default function KKGECPPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <div className="bg-brand-surface-container rounded-2xl p-8 md:p-12 border border-brand-outline-variant mb-8">
-              <h2 className="text-3xl font-black text-brand-primary mb-4">Vision</h2>
+              <h2 className="text-4xl font-black text-brand-primary mb-4">Vision</h2>
               <p className="text-xl text-brand-on-surface-variant leading-relaxed">
                 To establish Wards 16, 20 and the part of Ward 19 as a nationally recognized model of integrated green economic development, where sustainable agriculture, agroforestry, river basin conservation, eco-tourism, fisheries, waste management and entrepreneurship coexist harmoniously.
               </p>
             </div>
             <div className="bg-brand-surface-container rounded-2xl p-8 md:p-12 border border-brand-outline-variant">
-              <h2 className="text-3xl font-black text-brand-primary mb-4">Goal</h2>
+              <h2 className="text-4xl font-black text-brand-primary mb-4">Goal</h2>
               <p className="text-xl text-brand-on-surface-variant leading-relaxed">
                 To promote sustainable economic growth and improve the quality of life for local communities through integrated management of agriculture, tourism, forests, and river ecosystems.
               </p>
@@ -95,7 +95,7 @@ export default function KKGECPPage() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Objectives<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -111,14 +111,14 @@ export default function KKGECPPage() {
               ].map((obj, i) => (
                 <div key={i} className="flex gap-3 items-start bg-white rounded-xl p-5 border border-brand-outline-variant">
                   <Target className="size-5 text-brand-primary shrink-0 mt-1" />
-                  <p className="text-brand-on-surface-variant">{obj}</p>
+                  <p className="text-xl text-brand-on-surface-variant">{obj}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Strategic Components<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="space-y-6">
@@ -138,7 +138,7 @@ export default function KKGECPPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-brand-primary mb-2">{item.title}</h3>
-                      <p className="text-brand-on-surface-variant" dangerouslySetInnerHTML={{ __html: item.desc }} />
+                      <p className="text-xl text-brand-on-surface-variant" dangerouslySetInnerHTML={{ __html: item.desc }} />
                     </div>
                   </div>
                 );
@@ -155,35 +155,35 @@ export default function KKGECPPage() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Implementation Strategy<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="space-y-6">
               <div className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Community Participation</h3>
-                <p className="text-brand-on-surface-variant">Local stakeholders — farmers, cooperatives, community forest user groups, women&apos;s groups, youth clubs, and entrepreneurs — will be actively engaged in planning and implementation.</p>
+                <p className="text-xl text-brand-on-surface-variant">Local stakeholders — farmers, cooperatives, community forest user groups, women&apos;s groups, youth clubs, and entrepreneurs — will be actively engaged in planning and implementation.</p>
               </div>
               <div className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Public-Private Partnerships (PPP)</h3>
-                <p className="text-brand-on-surface-variant">Investments will be mobilized for eco-lodges, agro-processing industries, renewable energy systems, and commercial agriculture ventures.</p>
+                <p className="text-xl text-brand-on-surface-variant">Investments will be mobilized for eco-lodges, agro-processing industries, renewable energy systems, and commercial agriculture ventures.</p>
               </div>
               <div className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Capacity Building</h3>
-                <p className="text-brand-on-surface-variant">Regular training will be conducted on regenerative agriculture, entrepreneurship, hospitality, eco-tourism, business management, and digital marketing.</p>
+                <p className="text-xl text-brand-on-surface-variant">Regular training will be conducted on regenerative agriculture, entrepreneurship, hospitality, eco-tourism, business management, and digital marketing.</p>
               </div>
               <div className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Infrastructure Development</h3>
-                <p className="text-brand-on-surface-variant">Key infrastructure will include rural roads, irrigation systems, collection centers, cold storage, market facilities, eco-trails, and renewable energy systems.</p>
+                <p className="text-xl text-brand-on-surface-variant">Key infrastructure will include rural roads, irrigation systems, collection centers, cold storage, market facilities, eco-trails, and renewable energy systems.</p>
               </div>
               <div className="bg-brand-surface-container rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Environmental Safeguards</h3>
-                <p className="text-brand-on-surface-variant">The project emphasizes watershed management, biodiversity conservation, waste management, climate adaptation, and green infrastructure to ensure ecological integrity.</p>
+                <p className="text-xl text-brand-on-surface-variant">The project emphasizes watershed management, biodiversity conservation, waste management, climate adaptation, and green infrastructure to ensure ecological integrity.</p>
               </div>
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Expected Outcomes<span className="text-brand-blushed-brick">.</span>
             </h2>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6 text-center">
@@ -203,14 +203,14 @@ export default function KKGECPPage() {
               ].map((outcome, i) => (
                 <div key={i} className="flex gap-3 items-start bg-white rounded-xl p-5 border border-brand-outline-variant">
                   <Globe className="size-5 text-brand-primary shrink-0 mt-1" />
-                  <p className="text-brand-on-surface-variant">{outcome}</p>
+                  <p className="text-xl text-brand-on-surface-variant">{outcome}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Partnerships &amp; Leadership<span className="text-brand-blushed-brick">.</span>
             </h2>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
@@ -242,7 +242,7 @@ export default function KKGECPPage() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Sustainability Framework<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -255,7 +255,7 @@ export default function KKGECPPage() {
               ].map((item, i) => (
                 <div key={i} className="flex gap-3 items-start bg-white rounded-xl p-5 border border-brand-outline-variant">
                   <Lightbulb className="size-5 text-brand-primary shrink-0 mt-1" />
-                  <p className="text-brand-on-surface-variant">{item}</p>
+                  <p className="text-xl text-brand-on-surface-variant">{item}</p>
                 </div>
               ))}
             </div>
@@ -265,7 +265,7 @@ export default function KKGECPPage() {
           </div>
 
           <div id="volunteer" className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Volunteer Engagement Opportunities<span className="text-brand-blushed-brick">.</span>
             </h2>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-8">
@@ -283,15 +283,15 @@ export default function KKGECPPage() {
                 { title: "Cultural &amp; Creative Engagement", desc: "Document local traditions, crafts, and stories for tourism promotion, using talents in art, media, and storytelling to preserve and showcase the rich cultural heritage of the watershed." },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-6 border border-brand-outline-variant">
-                  <h3 className="text-lg font-bold text-brand-primary mb-2">{item.title}</h3>
-                  <p className="text-brand-on-surface-variant">{item.desc}</p>
+                  <h3 className="text-xl font-bold text-brand-primary mb-2">{item.title}</h3>
+                  <p className="text-xl text-brand-on-surface-variant">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-black text-brand-primary mb-8">
+            <h2 className="text-5xl font-black text-brand-primary mb-8">
               Synopsis<span className="text-brand-blushed-brick">.</span>
             </h2>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">

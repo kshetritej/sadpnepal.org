@@ -25,7 +25,7 @@ export default function VolunteerPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Volunteer in<br />Nepal<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Nepal, the &ldquo;Land of Paradise&rdquo;, is a country of breathtaking beauty, abundant wildlife, and fascinating traditional cultures. Join us to make a positive difference in the lives of deprived communities.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -111,7 +111,7 @@ export default function VolunteerPage() {
                 ].map((req, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle className="size-6 text-brand-primary shrink-0 mt-0.5" />
-                    <span className="text-lg text-brand-on-surface-variant">{req}</span>
+                    <span className="text-xl text-brand-on-surface-variant">{req}</span>
                   </div>
                 ))}
               </div>

@@ -21,7 +21,7 @@ export default function SpiritualVolunteerPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Spiritual<br />Volunteering<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Nepal is the land of the mystically sacred Himalayas, unexplored and untouched. It is not only a destination for trekkers and adventure seekers but also a sacred realm for seekers of inner peace. Spiritual volunteering in Nepal is a lifetime opportunity as it is the melting pot of Hinduism and Buddhism.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -65,44 +65,44 @@ export default function SpiritualVolunteerPage() {
                 <BookOpen className="size-6 text-brand-yellow-green" />
               </div>
               <h3 className="text-xl font-bold text-brand-primary mb-3">Sacred Heritage</h3>
-              <p className="text-brand-on-surface-variant">Home to Lumbini, the birthplace of Lord Buddha as well as esteemed Pashupatinath Temple and countless monasteries and temples.</p>
+              <p className="text-xl text-brand-on-surface-variant">Home to Lumbini, the birthplace of Lord Buddha as well as esteemed Pashupatinath Temple and countless monasteries and temples.</p>
             </div>
             <div className="bg-brand-surface-container rounded-2xl p-8 border border-brand-outline-variant">
               <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
                 <Users className="size-6 text-brand-yellow-green" />
               </div>
               <h3 className="text-xl font-bold text-brand-primary mb-3">Authentic Experiences</h3>
-              <p className="text-brand-on-surface-variant">Engage with monks in monasteries and sadhus in the temples, spiritual teachers, and local communities in daily practices.</p>
+              <p className="text-xl text-brand-on-surface-variant">Engage with monks in monasteries and sadhus in the temples, spiritual teachers, and local communities in daily practices.</p>
             </div>
             <div className="bg-brand-surface-container rounded-2xl p-8 border border-brand-outline-variant">
               <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center mb-4">
                 <Sprout className="size-6 text-brand-yellow-green" />
               </div>
               <h3 className="text-xl font-bold text-brand-primary mb-3">Natural Serenity</h3>
-              <p className="text-brand-on-surface-variant">The Himalayas offer a peaceful backdrop for meditation, yoga, and reflection.</p>
+              <p className="text-xl text-brand-on-surface-variant">The Himalayas offer a peaceful backdrop for meditation, yoga, and reflection.</p>
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Types of Spiritual Volunteering<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Monastery/Temple Volunteering</h3>
-                <p className="text-brand-on-surface-variant">Teach English to young monks, participate in chanting, and learn Buddhist philosophy. Experience Hindu rites and culture firsthand and meet sadhus and saints to listen to their spiritual journeys and preachings.</p>
+                <p className="text-xl text-brand-on-surface-variant">Teach English to young monks, participate in chanting, and learn Buddhist philosophy. Experience Hindu rites and culture firsthand and meet sadhus and saints to listen to their spiritual journeys and preachings.</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Yoga Retreats</h3>
-                <p className="text-brand-on-surface-variant">Support yoga centers by assisting with classes, organizing events, or helping with community outreach.</p>
+                <p className="text-xl text-brand-on-surface-variant">Support yoga centers by assisting with classes, organizing events, or helping with community outreach.</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Meditation Programs</h3>
-                <p className="text-brand-on-surface-variant">Volunteer at meditation centers, guiding participants or helping with daily operations.</p>
+                <p className="text-xl text-brand-on-surface-variant">Volunteer at meditation centers, guiding participants or helping with daily operations.</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-brand-outline-variant">
                 <h3 className="text-xl font-bold text-brand-primary mb-2">Community Service</h3>
-                <p className="text-brand-on-surface-variant">Work with local NGOs that integrate spiritual practices into social development.</p>
+                <p className="text-xl text-brand-on-surface-variant">Work with local NGOs that integrate spiritual practices into social development.</p>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function SpiritualVolunteerPage() {
       <section className="py-28">
         <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-black text-brand-primary mb-8">
+            <h2 className="text-5xl font-black text-brand-primary mb-8">
               Benefits of Spiritual Volunteering<span className="text-brand-blushed-brick">.</span>
             </h2>
           </div>
@@ -134,21 +134,21 @@ export default function SpiritualVolunteerPage() {
                 <Brain className="size-7 text-brand-primary" />
               </div>
               <h3 className="text-xl font-bold text-brand-primary mb-3">Personal Growth</h3>
-              <p className="text-brand-on-surface-variant">Deepen your mindfulness and self-awareness.</p>
+              <p className="text-xl text-brand-on-surface-variant">Deepen your mindfulness and self-awareness.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-brand-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                 <Users className="size-7 text-brand-primary" />
               </div>
               <h3 className="text-xl font-bold text-brand-primary mb-3">Cultural Immersion</h3>
-              <p className="text-brand-on-surface-variant">Experience Nepalese traditions, festivals, and rituals firsthand.</p>
+              <p className="text-xl text-brand-on-surface-variant">Experience Nepalese traditions, festivals, and rituals firsthand.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-brand-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                 <Sprout className="size-7 text-brand-primary" />
               </div>
               <h3 className="text-xl font-bold text-brand-primary mb-3">Meaningful Impact</h3>
-              <p className="text-brand-on-surface-variant">Support education, community development, and preservation of spiritual heritage.</p>
+              <p className="text-xl text-brand-on-surface-variant">Support education, community development, and preservation of spiritual heritage.</p>
             </div>
           </div>
         </div>

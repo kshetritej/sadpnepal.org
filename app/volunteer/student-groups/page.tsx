@@ -21,7 +21,7 @@ export default function StudentGroupsPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Student Group<br />Volunteering<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Student group volunteer trips to Nepal offer traveling students to choose activities from a pool of noble choices. A student volunteer trip in Nepal is more than service — it&apos;s an educational journey. Participants return with practical skills, cultural awareness, and a deeper understanding of sustainability and social responsibility.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">

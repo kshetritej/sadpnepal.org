@@ -21,7 +21,7 @@ export default function DonatePage() {
     <div className="bg-brand-bg text-brand-primary">
       <section className="max-w-[1280px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[50vh] items-center">
-          <div className="py-16 md:py-24">
+          <div className="py-16 md:py-28">
             <span className="inline-block bg-brand-yellow-green/10 text-brand-yellow-green text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">
               Support Our Mission
             </span>
@@ -59,13 +59,13 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section id="bank" className="py-24">
+      <section id="bank" className="py-28">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-4 block">
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">
               Bank Transfer
             </span>
-            <h2 className="text-5xl font-black mb-4">
+            <h2 className="text-5xl font-black text-brand-primary mb-4">
               Make a Donation
             </h2>
             <p className="text-xl text-brand-on-surface-variant max-w-2xl mx-auto">
@@ -112,13 +112,13 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section id="form" className="py-24 bg-brand-surface-container-low">
+      <section id="form" className="py-28 bg-brand-surface-container-low">
         <div className="max-w-2xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-4 block">
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-blushed-brick mb-4 block">
               Donor Form
             </span>
-            <h2 className="text-5xl font-black mb-4">
+            <h2 className="text-5xl font-black text-brand-primary mb-4">
               Leave Your Details
             </h2>
             <p className="text-xl text-brand-on-surface-variant">
@@ -188,7 +188,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="bg-brand-primary py-24">
+      <section className="bg-brand-primary py-28">
         <div className="max-w-2xl mx-auto text-center px-6">
           <h2 className="text-5xl font-black text-white">
             Stay Connected

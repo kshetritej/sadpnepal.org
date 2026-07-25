@@ -21,7 +21,7 @@ export default function RegenerativeFarmingPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Regenerative<br />Organic Farming<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 More than Nepal&apos;s 65% population depends on agriculture, yet many farmers lack access to advanced organic strategies. Farming volunteers here not only support local farmers but also contribute to global movements for sustainable food systems that assure global food security.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -60,11 +60,11 @@ export default function RegenerativeFarmingPage() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl font-black text-brand-primary mb-8 text-center">
+            <h2 className="text-5xl font-black text-brand-primary mb-8 text-center">
               Takeaways from Volunteering<span className="text-brand-blushed-brick">.</span>
             </h2>
             <div className="bg-brand-surface-container rounded-2xl p-8 md:p-10 border border-brand-outline-variant">
-              <ul className="space-y-4 text-brand-on-surface-variant text-lg">
+              <ul className="space-y-4 text-brand-on-surface-variant text-xl">
                 <li>Volunteer programs connect international participants with smallholder farmers across Nepal&apos;s hills and valleys.</li>
                 <li>Daily tasks include composting, seed saving, crop rotation, natural pest control, and weeding.</li>
                 <li>Volunteers live within farming communities, gaining cultural immersion while sharing skills and knowledge.</li>

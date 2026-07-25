@@ -21,7 +21,7 @@ export default function ConservationVolunteerPage() {
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
                 Biodiversity<br />Conservation<span className="text-brand-blushed-brick">.</span>
               </h1>
-              <p className="text-xl md:text-xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 Nepal&apos;s landscapes — from snowcapped high Himalayas to wide fertile valleys — are home to extraordinary biodiversity. Help us protect forests, wetlands, freshwater systems, and soils.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">

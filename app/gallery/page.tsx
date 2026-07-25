@@ -101,7 +101,7 @@ export default function GalleryPage() {
 
       <section className="bg-brand-primary-container py-28 px-6 md:px-16">
         <div className="max-w-[1280px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+          <h2 className="text-5xl font-black text-white mb-4">
             Be Part of the Story
           </h2>
           <p className="text-white/80 text-xl max-w-2xl mx-auto mb-10">

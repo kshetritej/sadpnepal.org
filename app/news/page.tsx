@@ -91,7 +91,7 @@ export default async function NewsPage() {
                     <span>{formatDate(post.date)}</span>
                   </div>
                   <h2 className="text-2xl font-bold text-brand-primary mb-3">{post.title.rendered}</h2>
-                  <p className="text-brand-on-surface-variant mb-4">{stripHtml(post.excerpt.rendered)}</p>
+                  <p className="text-xl text-brand-on-surface-variant mb-4">{stripHtml(post.excerpt.rendered)}</p>
                   <span className="inline-flex items-center gap-2 text-brand-primary text-sm font-bold group-hover:underline">
                     Read More <ArrowRight className="size-4" />
                   </span>
