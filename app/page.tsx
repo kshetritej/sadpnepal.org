@@ -59,13 +59,13 @@ function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
-                href="/volunteer"
+                href="/about"
                 className="bg-brand-primary text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-sm hover:bg-brand-primary/90 transition-all duration-200 text-center"
               >
-                Start Your Journey
+                Story of SADP-Nepal
               </Link>
               <Link
-                href="/about"
+                href="/volunteer"
                 className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
               >
                 See Programs
@@ -75,7 +75,7 @@ function HeroSection() {
               Let&apos;s join hands to support our farmers. Your small help can be life-changing.
             </p>
           </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={HERO_BG}
                 alt="Nepal sustainable agriculture"

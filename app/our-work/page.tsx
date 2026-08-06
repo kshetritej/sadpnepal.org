@@ -33,14 +33,14 @@ export default function OurWork() {
                   Volunteer With Us
                 </Link>
                 <Link
-                  href="/projects/kkgecp"
+                  href="/projects/kgecp"
                   className="border-2 border-brand-primary text-brand-primary px-8 py-3.5 rounded-full text-sm font-bold hover:bg-brand-primary hover:text-white transition-all duration-200 text-center"
                 >
                   Our Flagship Project
                 </Link>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={HERO_BG}
                 alt="Our work in Nepal"

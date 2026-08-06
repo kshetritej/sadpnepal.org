@@ -103,7 +103,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 <ArrowLeft className="size-4" /> Back to News
               </Link>
             </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={featuredImage || "https://images.unsplash.com/photo-1731491435516-566d6d1e3141?w=1200&q=80&auto=format&fit=crop"}
                 alt={post.title.rendered}

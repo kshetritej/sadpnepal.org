@@ -22,7 +22,7 @@ const links = [
     ],
   },
   { href: "/internship", label: "Internships" },
-  { href: "/projects/kkgecp", label: "KKGECP" },
+  { href: "/projects/kgecp", label: "KGECP" },
   { href: "/gallery", label: "Gallery" },
   { href: "/news", label: "News" },
 ];
@@ -55,7 +55,7 @@ export function Nav() {
                   onMouseLeave={() => setVolunteerOpen(false)}
                 >
                   <button
-                    className={`text-xs font-bold uppercase tracking-wider transition-colors flex items-center gap-1 ${
+                    className={`text-sm font-bold uppercase tracking-wider transition-colors flex items-center gap-1 ${
                       isActive(l.href)
                         ? "text-brand-primary border-b-2 border-brand-blushed-brick pb-1"
                         : "text-brand-on-surface hover:text-brand-blushed-brick"
@@ -90,7 +90,7 @@ export function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`text-xs font-bold uppercase tracking-wider transition-colors ${
+                className={`text-sm font-bold uppercase tracking-wider transition-colors ${
                   isActive(l.href)
                     ? "text-brand-primary border-b-2 border-brand-blushed-brick pb-1"
                     : "text-brand-on-surface hover:text-brand-blushed-brick"
@@ -126,7 +126,7 @@ export function Nav() {
                     <Link
                       href={l.href}
                       onClick={() => setOpen(false)}
-                      className={`text-xs font-bold uppercase tracking-wider ${
+                      className={`text-sm font-bold uppercase tracking-wider ${
                         isActive(l.href) ? "text-brand-primary" : "text-brand-on-surface"
                       }`}
                     >
@@ -154,7 +154,7 @@ export function Nav() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className={`text-xs font-bold uppercase tracking-wider ${
+                  className={`text-sm font-bold uppercase tracking-wider ${
                     isActive(l.href) ? "text-brand-primary" : "text-brand-on-surface"
                   }`}
                 >

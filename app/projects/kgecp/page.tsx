@@ -3,14 +3,14 @@ import { Leaf, Fish, TreePine, Mountain, Utensils, Rocket, Building, Target, Glo
 import { CONSERVATION_PHOTOS } from "@/lib/photos";
 
 export const metadata = {
-  title: "Kali Khola Green Economic Corridor Project",
-  description: "A community-led visionary blueprint to transform Kali Khola into an exemplary hub of resilient, self-sustaining eco-corridor in Pokhara.",
+  title: "Kalikhola Green Economic Corridor Project",
+  description: "A community-led visionary blueprint to transform Kalikhola into an exemplary hub of resilient, self-sustaining eco-corridor in Pokhara.",
 };
 
 const HERO_BG = CONSERVATION_PHOTOS[0];
 const inlinePhotos = [CONSERVATION_PHOTOS[5], CONSERVATION_PHOTOS[8], CONSERVATION_PHOTOS[9], CONSERVATION_PHOTOS[11]];
 
-export default function KKGECPPage() {
+export default function KGECPPage() {
   return (
     <>
       <section className="relative min-h-[50vh] overflow-hidden bg-brand-bg">
@@ -19,7 +19,7 @@ export default function KKGECPPage() {
             <div className="py-16 md:py-24">
               <span className="inline-block bg-brand-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-6">PROJECT</span>
               <h1 className="text-4xl md:text-6xl font-black text-brand-primary mb-6">
-                Kali Khola Green<br />Economic Corridor<span className="text-brand-blushed-brick">.</span>
+                Kalikhola Green<br />Economic Corridor<span className="text-brand-blushed-brick">.</span>
               </h1>
               <p className="text-xl md:text-2xl text-brand-on-surface-variant max-w-lg mb-8 leading-relaxed">
                 A community-led visionary blueprint to transform and enhance one of Pokhara&apos;s most ecologically resourceful yet fragile zones into an exemplary hub of resilient, self-sustaining, thriving and vibrant eco-corridor.
@@ -39,10 +39,10 @@ export default function KKGECPPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={HERO_BG}
-                alt="Kali Khola Green Economic Corridor"
+                alt="Kalikhola Green Economic Corridor"
                 className="w-full h-full object-cover scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
@@ -55,10 +55,10 @@ export default function KKGECPPage() {
         <div className="px-6 md:px-16 max-w-[1280px] mx-auto">
           <div className="max-w-4xl mx-auto mb-20">
             <p className="text-xl md:text-2xl text-brand-on-surface leading-relaxed mb-6">
-              Kali Khola originates at Kali Lek Ward No-16 in Pokhara and is a northern tributary of the glacier fed Seti Gandaki River. It forms the natural and administrative boundary between Ward No. 16 (Batulechaur/Lamachaur) and Ward No. 20 (Bhalam) of Pokhara Metropolitan City. Kali Khola carves the landscapes of these two wards of Pokhara. Gharmi Khola, a river that flows into Kali Khola, runs through the adjacent Ward No-19 and hence KKGECP includes the whole of Ward Nos 16 and 20 and a tiny part of Ward No 19 of Pokhara City. The total area the project comprises is between 65-70 sq.km.
+              Kalikhola originates at Kali Lek Ward No-16 in Pokhara and is a northern tributary of the glacier fed Seti Gandaki River. It forms the natural and administrative boundary between Ward No. 16 (Batulechaur/Lamachaur) and Ward No. 20 (Bhalam) of Pokhara Metropolitan City. Kalikhola carves the landscapes of these two wards of Pokhara. Gharmi Khola, a river that flows into Kalikhola, runs through the adjacent Ward No-19 and hence KGECP includes the whole of Ward Nos 16 and 20 and a tiny part of Ward No 19 of Pokhara City. The total area the project comprises is between 65-70 sq.km.
             </p>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
-              With almost 7 km stretch from Kali Lek to Bhalam, a perennial river, Kali Khola runs between the hills fed by several other tiny rivers amassing significant river basin area and impacting the lives of every species within expanded surroundings. Kali Khola in the region is the principal actor for its centuries old cultural and natural opulence.
+              With almost 7 km stretch from Kali Lek to Bhalam, a perennial river, Kalikhola runs between the hills fed by several other tiny rivers amassing significant river basin area and impacting the lives of every species within expanded surroundings. Kalikhola in the region is the principal actor for its centuries old cultural and natural opulence.
             </p>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed">
               The diverse landscapes, comprised of slopy hills, rivers and their catchment areas, terraced fields, wide plains, lush forestland, stony high cliffs, cavernous caves and hilltop viewpoints offer a unique opportunity to integrate agriculture, tourism, fisheries, agroforestry, and hospitality into a multi-stream revenue model that uplifts local communities while preserving ecological balance.
@@ -67,14 +67,14 @@ export default function KKGECPPage() {
 
           <div className="max-w-4xl mx-auto mb-20 bg-brand-surface-container rounded-2xl p-8 md:p-12 border border-brand-outline-variant">
             <p className="text-xl text-brand-on-surface-variant leading-relaxed">
-              The watershed or the river basin area of Kali Khola is a lifeline for the region — a source of water, biodiversity, and livelihoods — yet it faces mounting threats from climate vulnerability, rapid urbanization, and unsustainable land use or simply put absolute misuse. Seasonal flash floods, soil erosion, and sedimentation have become recurring challenges, while local communities remain economically vulnerable despite their proximity to major tourist attractions like Mahendra Cave and Bat Cave. The project aims to restore ecological balance, revitalize local economies, and build climate resilience through regenerative ecology, sustainable infrastructure, and green livelihood innovation.
+              The watershed or the river basin area of Kalikhola is a lifeline for the region — a source of water, biodiversity, and livelihoods — yet it faces mounting threats from climate vulnerability, rapid urbanization, and unsustainable land use or simply put absolute misuse. Seasonal flash floods, soil erosion, and sedimentation have become recurring challenges, while local communities remain economically vulnerable despite their proximity to major tourist attractions like Mahendra Cave and Bat Cave. The project aims to restore ecological balance, revitalize local economies, and build climate resilience through regenerative ecology, sustainable infrastructure, and green livelihood innovation.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
             {inlinePhotos.slice(0, 3).map((photo, i) => (
               <div key={i} className="rounded-2xl overflow-hidden aspect-[4/3]">
-                <img src={photo} alt="Kali Khola project area" className="w-full h-full object-cover" />
+                <img src={photo} alt="Kalikhola project area" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
@@ -126,7 +126,7 @@ export default function KKGECPPage() {
                 { icon: Leaf, title: "Sustainable Agriculture &amp; Agribusiness", desc: "The project promotes organic farming clusters. Backed by research, the project encourages plantation of high value plants that best suit the soil type of every small arable land. It envisions agro-processing industries, branding of local products, and cold storage facilities to enhance market access and reduce post-harvest losses." },
                 { icon: Fish, title: "Fisheries &amp; Aquaculture", desc: "Plans include indigenous fish conservation, community-managed ponds, fish hatcheries, and recreational fishing zones. Riverside restaurants and eco-friendly aquaculture will create new income streams while preserving aquatic biodiversity." },
                 { icon: TreePine, title: "Agroforestry, Forest Economy &amp; Carbon Credit", desc: "The initiative integrates bamboo plantations, fruit trees, medicinal and aromatic plants, beekeeping, and non-timber forest products. Community forestry enterprises will contribute to carbon sequestration, ecosystem restoration, and forest-based livelihoods. Hence, the project ensures negative carbon credit." },
-                { icon: Mountain, title: "River Basin Development &amp; Eco-Tourism", desc: "The Seti River, Kali Khola, Gharmi Khola and Bhalam Khola corridors will be developed as eco-tourism destinations featuring nature trails, bird-watching zones, eco-parks, camping sites, adventure sports like rock-climbing and cultural tourism hubs. River conservation education centers will promote awareness and stewardship among visitors and locals alike." },
+                { icon: Mountain, title: "River Basin Development &amp; Eco-Tourism", desc: "The Seti River, Kalikhola, Gharmi Khola and Bhalam Khola corridors will be developed as eco-tourism destinations featuring nature trails, bird-watching zones, eco-parks, camping sites, adventure sports like rock-climbing and cultural tourism hubs. River conservation education centers will promote awareness and stewardship among visitors and locals alike." },
                 { icon: Utensils, title: "Hospitality &amp; Tourism Development", desc: "The project encourages farm stays, community homestays, boutique eco-lodges, and farm-to-table restaurants. Cultural performances, wellness tourism, yoga, and meditation centers will strengthen Pokhara's reputation as a holistic tourism destination." },
                 { icon: Rocket, title: "Entrepreneurship &amp; Green Enterprises", desc: "Support will be extended to women's cooperatives, youth startups, agri-tech innovators, and digital marketing platforms. Business incubation centers will nurture local talent and innovation, fostering a new generation of green entrepreneurs." },
               ].map((item, i) => {
@@ -149,7 +149,7 @@ export default function KKGECPPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
             {inlinePhotos.slice(3, 5).map((photo, i) => (
               <div key={i} className="rounded-2xl overflow-hidden aspect-[16/9]">
-                <img src={photo} alt="Kali Khola project" className="w-full h-full object-cover" />
+                <img src={photo} alt="Kalikhola project" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
@@ -269,7 +269,7 @@ export default function KKGECPPage() {
               Volunteer Engagement Opportunities<span className="text-brand-blushed-brick">.</span>
             </h2>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-8">
-              Volunteers will play a crucial role in supporting the community-based and ecological initiatives of the Kali Khola Watershed Management Project. Their involvement will span across diverse areas, each offering meaningful contributions to both the environment and local livelihoods.
+              Volunteers will play a crucial role in supporting the community-based and ecological initiatives of the Kalikhola Watershed Management Project. Their involvement will span across diverse areas, each offering meaningful contributions to both the environment and local livelihoods.
             </p>
             <div className="space-y-4">
               {[
@@ -295,7 +295,7 @@ export default function KKGECPPage() {
               Synopsis<span className="text-brand-blushed-brick">.</span>
             </h2>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed mb-6">
-              The Kali Khola Watershed Management Project represents a bold step toward integrated green economic development in Pokhara. By uniting agriculture, tourism, forestry, and entrepreneurship under a single framework, it seeks to create a living corridor of sustainability — where nature and livelihoods thrive together.
+              The Kalikhola Watershed Management Project represents a bold step toward integrated green economic development in Pokhara. By uniting agriculture, tourism, forestry, and entrepreneurship under a single framework, it seeks to create a living corridor of sustainability — where nature and livelihoods thrive together.
             </p>
             <p className="text-xl text-brand-on-surface-variant leading-relaxed">
               Through collaboration among local communities, government bodies, private enterprises, and volunteers, the project will serve as a flagship model for Nepal&apos;s green transition, demonstrating how regenerative ecology and inclusive growth can coexist to build a resilient future for all.
@@ -307,7 +307,7 @@ export default function KKGECPPage() {
       <section className="py-28 px-6 md:px-16">
         <div className="bg-brand-yellow-green rounded-xl p-12 md:p-24 text-center max-w-[1280px] mx-auto relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-5xl font-black text-brand-primary mb-8">Support the KKGECP<span className="text-brand-blushed-brick">.</span></h2>
+            <h2 className="text-5xl font-black text-brand-primary mb-8">Support the KGECP<span className="text-brand-blushed-brick">.</span></h2>
             <p className="text-xl text-brand-on-surface-variant max-w-2xl mx-auto mb-8">
               Join as a volunteer or donate to support the pilot mission of bringing back the identity of this almost lost river system.
             </p>

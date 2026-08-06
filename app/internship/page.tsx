@@ -34,7 +34,7 @@ export default function InternshipPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl rotate-[1.5deg]">
+            <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={HERO_IMAGE}
                 alt="Internship program"
